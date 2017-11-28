@@ -18,6 +18,14 @@
 		04431BBD1FCD083D0099580A /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04431BBC1FCD083D0099580A /* libbz2.tbd */; };
 		04431BBF1FCD08450099580A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04431BBE1FCD08450099580A /* libz.tbd */; };
 		04431BC71FCD0B4A0099580A /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04431BC61FCD0B490099580A /* libstdc++.tbd */; };
+		04431BCE1FCD0D830099580A /* QQLiveListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04431BCD1FCD0D830099580A /* QQLiveListController.m */; };
+		04431BD11FCD0D8D0099580A /* QQLiveListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04431BD01FCD0D8D0099580A /* QQLiveListCell.m */; };
+		04431BD61FCD0D9B0099580A /* QQLiveList.m in Sources */ = {isa = PBXBuildFile; fileRef = 04431BD21FCD0D9A0099580A /* QQLiveList.m */; };
+		04431BD71FCD0D9B0099580A /* QQLive.m in Sources */ = {isa = PBXBuildFile; fileRef = 04431BD31FCD0D9A0099580A /* QQLive.m */; };
+		04431BDB1FCD0DFF0099580A /* QQNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04431BD91FCD0DFF0099580A /* QQNetworkManager.m */; };
+		04431BE21FCD0E390099580A /* QQLiveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04431BE11FCD0E390099580A /* QQLiveController.m */; };
+		04431BE91FCD13500099580A /* QQVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04431BE81FCD13500099580A /* QQVideoViewController.m */; };
+		04431BEC1FCD135C0099580A /* QQVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 04431BEA1FCD135C0099580A /* QQVideo.m */; };
 		05A917B65D6707E6755C79A3 /* libPods-QQLive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A83C2B1E70D4F1EAB674CB /* libPods-QQLive.a */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +57,22 @@
 		04431BC41FCD08640099580A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		04431BC51FCD086A0099580A /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		04431BC61FCD0B490099580A /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		04431BCC1FCD0D830099580A /* QQLiveListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQLiveListController.h; sourceTree = "<group>"; };
+		04431BCD1FCD0D830099580A /* QQLiveListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQLiveListController.m; sourceTree = "<group>"; };
+		04431BCF1FCD0D8D0099580A /* QQLiveListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQLiveListCell.h; sourceTree = "<group>"; };
+		04431BD01FCD0D8D0099580A /* QQLiveListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQLiveListCell.m; sourceTree = "<group>"; };
+		04431BD21FCD0D9A0099580A /* QQLiveList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQLiveList.m; sourceTree = "<group>"; };
+		04431BD31FCD0D9A0099580A /* QQLive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQLive.m; sourceTree = "<group>"; };
+		04431BD41FCD0D9A0099580A /* QQLiveList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQLiveList.h; sourceTree = "<group>"; };
+		04431BD51FCD0D9B0099580A /* QQLive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQLive.h; sourceTree = "<group>"; };
+		04431BD91FCD0DFF0099580A /* QQNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQNetworkManager.m; sourceTree = "<group>"; };
+		04431BDA1FCD0DFF0099580A /* QQNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQNetworkManager.h; sourceTree = "<group>"; };
+		04431BE01FCD0E390099580A /* QQLiveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQLiveController.h; sourceTree = "<group>"; };
+		04431BE11FCD0E390099580A /* QQLiveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQLiveController.m; sourceTree = "<group>"; };
+		04431BE71FCD13500099580A /* QQVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQVideoViewController.h; sourceTree = "<group>"; };
+		04431BE81FCD13500099580A /* QQVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQVideoViewController.m; sourceTree = "<group>"; };
+		04431BEA1FCD135C0099580A /* QQVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQVideo.m; sourceTree = "<group>"; };
+		04431BEB1FCD135C0099580A /* QQVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQVideo.h; sourceTree = "<group>"; };
 		86A83C2B1E70D4F1EAB674CB /* libPods-QQLive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QQLive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A98C5534DCB19713F47B9851 /* Pods-QQLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QQLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-QQLive/Pods-QQLive.release.xcconfig"; sourceTree = "<group>"; };
 		F737E6EF8C8376D7E1988AFB /* Pods-QQLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QQLive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QQLive/Pods-QQLive.debug.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +116,9 @@
 			isa = PBXGroup;
 			children = (
 				04431BAB1FCCFF360099580A /* Home */,
+				04431BC81FCD0D720099580A /* LiveList */,
+				04431BDC1FCD0E260099580A /* Live */,
+				04431BE31FCD13410099580A /* Video */,
 				04431BA51FCCFF2E0099580A /* Other */,
 				04431BA41FCCFF2D0099580A /* Tool */,
 				04431B941FCCFED20099580A /* Main.storyboard */,
@@ -105,6 +132,7 @@
 		04431BA41FCCFF2D0099580A /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				04431BD81FCD0DF10099580A /* NetWork */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -150,6 +178,122 @@
 			children = (
 				04431BB21FCD05960099580A /* QQHomeCell.h */,
 				04431BB31FCD05960099580A /* QQHomeCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04431BC81FCD0D720099580A /* LiveList */ = {
+			isa = PBXGroup;
+			children = (
+				04431BC91FCD0D720099580A /* Controller */,
+				04431BCA1FCD0D720099580A /* Model */,
+				04431BCB1FCD0D720099580A /* View */,
+			);
+			path = LiveList;
+			sourceTree = "<group>";
+		};
+		04431BC91FCD0D720099580A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04431BCC1FCD0D830099580A /* QQLiveListController.h */,
+				04431BCD1FCD0D830099580A /* QQLiveListController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04431BCA1FCD0D720099580A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04431BD51FCD0D9B0099580A /* QQLive.h */,
+				04431BD31FCD0D9A0099580A /* QQLive.m */,
+				04431BD41FCD0D9A0099580A /* QQLiveList.h */,
+				04431BD21FCD0D9A0099580A /* QQLiveList.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04431BCB1FCD0D720099580A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04431BCF1FCD0D8D0099580A /* QQLiveListCell.h */,
+				04431BD01FCD0D8D0099580A /* QQLiveListCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04431BD81FCD0DF10099580A /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				04431BDA1FCD0DFF0099580A /* QQNetworkManager.h */,
+				04431BD91FCD0DFF0099580A /* QQNetworkManager.m */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		04431BDC1FCD0E260099580A /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				04431BDD1FCD0E260099580A /* Controller */,
+				04431BDE1FCD0E260099580A /* Model */,
+				04431BDF1FCD0E260099580A /* View */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		04431BDD1FCD0E260099580A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04431BE01FCD0E390099580A /* QQLiveController.h */,
+				04431BE11FCD0E390099580A /* QQLiveController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04431BDE1FCD0E260099580A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04431BDF1FCD0E260099580A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04431BE31FCD13410099580A /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				04431BE41FCD13410099580A /* Controller */,
+				04431BE51FCD13410099580A /* Model */,
+				04431BE61FCD13410099580A /* View */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		04431BE41FCD13410099580A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04431BE71FCD13500099580A /* QQVideoViewController.h */,
+				04431BE81FCD13500099580A /* QQVideoViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04431BE51FCD13410099580A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04431BEB1FCD135C0099580A /* QQVideo.h */,
+				04431BEA1FCD135C0099580A /* QQVideo.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04431BE61FCD13410099580A /* View */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -313,9 +457,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				04431BA91FCCFF2E0099580A /* main.m in Sources */,
+				04431BEC1FCD135C0099580A /* QQVideo.m in Sources */,
+				04431BCE1FCD0D830099580A /* QQLiveListController.m in Sources */,
 				04431BB11FCCFF500099580A /* QQHomeViewController.m in Sources */,
 				04431BB41FCD05960099580A /* QQHomeCell.m in Sources */,
+				04431BE91FCD13500099580A /* QQVideoViewController.m in Sources */,
 				04431BAA1FCCFF2E0099580A /* AppDelegate.m in Sources */,
+				04431BE21FCD0E390099580A /* QQLiveController.m in Sources */,
+				04431BD71FCD0D9B0099580A /* QQLive.m in Sources */,
+				04431BDB1FCD0DFF0099580A /* QQNetworkManager.m in Sources */,
+				04431BD61FCD0D9B0099580A /* QQLiveList.m in Sources */,
+				04431BD11FCD0D8D0099580A /* QQLiveListCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

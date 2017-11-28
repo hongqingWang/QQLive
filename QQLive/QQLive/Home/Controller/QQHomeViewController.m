@@ -8,7 +8,8 @@
 
 #import "QQHomeViewController.h"
 #import "QQHomeCell.h"
-
+#import "QQLiveListController.h"
+#import "QQVideoViewController.h"
 
 @interface QQHomeViewController ()
 
@@ -23,10 +24,7 @@
     [super viewDidLoad];
     
     self.navigationItem.title = @"首页";
-    
 }
-
-
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -51,12 +49,14 @@
     switch (indexPath.row) {
         case 0:                                     // 直播列表
         {
-            
+            QQLiveListController *vc = [[QQLiveListController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
         }
             break;
         case 1:                                     // 视频播放
         {
-            
+            QQVideoViewController *vc = [[QQVideoViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
         }
             break;
             
