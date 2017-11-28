@@ -53,7 +53,7 @@
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
-        case 1:                                     // 视频播放
+        case 1:                                     // 视频列表
         {
             QQVideoViewController *vc = [[QQVideoViewController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
@@ -72,7 +72,7 @@
         
         _titles = @[
                     @"直播列表",
-                    @"视频播放"
+                    @"视频列表"
                     ];
     }
     return _titles;
