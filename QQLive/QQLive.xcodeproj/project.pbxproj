@@ -14,6 +14,10 @@
 		04431BAA1FCCFF2E0099580A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04431BA81FCCFF2E0099580A /* AppDelegate.m */; };
 		04431BB11FCCFF500099580A /* QQHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04431BB01FCCFF500099580A /* QQHomeViewController.m */; };
 		04431BB41FCD05960099580A /* QQHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04431BB31FCD05960099580A /* QQHomeCell.m */; };
+		04431BB61FCD07AC0099580A /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04431BB51FCD07AC0099580A /* IJKMediaFramework.framework */; };
+		04431BBD1FCD083D0099580A /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04431BBC1FCD083D0099580A /* libbz2.tbd */; };
+		04431BBF1FCD08450099580A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04431BBE1FCD08450099580A /* libz.tbd */; };
+		04431BC71FCD0B4A0099580A /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04431BC61FCD0B490099580A /* libstdc++.tbd */; };
 		05A917B65D6707E6755C79A3 /* libPods-QQLive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A83C2B1E70D4F1EAB674CB /* libPods-QQLive.a */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +34,21 @@
 		04431BB01FCCFF500099580A /* QQHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQHomeViewController.m; sourceTree = "<group>"; };
 		04431BB21FCD05960099580A /* QQHomeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQHomeCell.h; sourceTree = "<group>"; };
 		04431BB31FCD05960099580A /* QQHomeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQHomeCell.m; sourceTree = "<group>"; };
+		04431BB51FCD07AC0099580A /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		04431BB71FCD08150099580A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		04431BB81FCD081E0099580A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		04431BB91FCD08250099580A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		04431BBA1FCD082C0099580A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		04431BBB1FCD08330099580A /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		04431BBC1FCD083D0099580A /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		04431BBE1FCD08450099580A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		04431BC01FCD084C0099580A /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		04431BC11FCD08520099580A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		04431BC21FCD08580099580A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		04431BC31FCD085E0099580A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		04431BC41FCD08640099580A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		04431BC51FCD086A0099580A /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		04431BC61FCD0B490099580A /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		86A83C2B1E70D4F1EAB674CB /* libPods-QQLive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QQLive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A98C5534DCB19713F47B9851 /* Pods-QQLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QQLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-QQLive/Pods-QQLive.release.xcconfig"; sourceTree = "<group>"; };
 		F737E6EF8C8376D7E1988AFB /* Pods-QQLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QQLive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QQLive/Pods-QQLive.debug.xcconfig"; sourceTree = "<group>"; };
@@ -40,7 +59,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04431BBD1FCD083D0099580A /* libbz2.tbd in Frameworks */,
+				04431BBF1FCD08450099580A /* libz.tbd in Frameworks */,
+				04431BC71FCD0B4A0099580A /* libstdc++.tbd in Frameworks */,
 				05A917B65D6707E6755C79A3 /* libPods-QQLive.a in Frameworks */,
+				04431BB61FCD07AC0099580A /* IJKMediaFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +157,21 @@
 		51E8E3D2AB579B9F94D7E1F9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04431BC61FCD0B490099580A /* libstdc++.tbd */,
+				04431BC51FCD086A0099580A /* VideoToolbox.framework */,
+				04431BC41FCD08640099580A /* UIKit.framework */,
+				04431BC31FCD085E0099580A /* QuartzCore.framework */,
+				04431BC21FCD08580099580A /* OpenGLES.framework */,
+				04431BC11FCD08520099580A /* MobileCoreServices.framework */,
+				04431BC01FCD084C0099580A /* MediaPlayer.framework */,
+				04431BBE1FCD08450099580A /* libz.tbd */,
+				04431BBC1FCD083D0099580A /* libbz2.tbd */,
+				04431BBB1FCD08330099580A /* CoreVideo.framework */,
+				04431BBA1FCD082C0099580A /* CoreMedia.framework */,
+				04431BB91FCD08250099580A /* CoreGraphics.framework */,
+				04431BB81FCD081E0099580A /* AVFoundation.framework */,
+				04431BB71FCD08150099580A /* AudioToolbox.framework */,
+				04431BB51FCD07AC0099580A /* IJKMediaFramework.framework */,
 				86A83C2B1E70D4F1EAB674CB /* libPods-QQLive.a */,
 			);
 			name = Frameworks;
@@ -414,6 +452,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GC4GVLG96H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = QQLive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ymbenzhi.QQLive;
@@ -429,6 +471,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GC4GVLG96H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = QQLive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ymbenzhi.QQLive;
