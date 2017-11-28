@@ -13,6 +13,8 @@
 		04431BA91FCCFF2E0099580A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04431BA71FCCFF2E0099580A /* main.m */; };
 		04431BAA1FCCFF2E0099580A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04431BA81FCCFF2E0099580A /* AppDelegate.m */; };
 		04431BB11FCCFF500099580A /* QQHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04431BB01FCCFF500099580A /* QQHomeViewController.m */; };
+		04431BB41FCD05960099580A /* QQHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04431BB31FCD05960099580A /* QQHomeCell.m */; };
+		05A917B65D6707E6755C79A3 /* libPods-QQLive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A83C2B1E70D4F1EAB674CB /* libPods-QQLive.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,11 @@
 		04431BA81FCCFF2E0099580A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		04431BAF1FCCFF500099580A /* QQHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQHomeViewController.h; sourceTree = "<group>"; };
 		04431BB01FCCFF500099580A /* QQHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQHomeViewController.m; sourceTree = "<group>"; };
+		04431BB21FCD05960099580A /* QQHomeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQHomeCell.h; sourceTree = "<group>"; };
+		04431BB31FCD05960099580A /* QQHomeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQHomeCell.m; sourceTree = "<group>"; };
+		86A83C2B1E70D4F1EAB674CB /* libPods-QQLive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QQLive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A98C5534DCB19713F47B9851 /* Pods-QQLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QQLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-QQLive/Pods-QQLive.release.xcconfig"; sourceTree = "<group>"; };
+		F737E6EF8C8376D7E1988AFB /* Pods-QQLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QQLive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QQLive/Pods-QQLive.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05A917B65D6707E6755C79A3 /* libPods-QQLive.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +52,8 @@
 			children = (
 				04431B8D1FCCFED20099580A /* QQLive */,
 				04431B8C1FCCFED20099580A /* Products */,
+				6D949B926010AD154AF372CA /* Pods */,
+				51E8E3D2AB579B9F94D7E1F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,8 +125,27 @@
 		04431BAE1FCCFF360099580A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04431BB21FCD05960099580A /* QQHomeCell.h */,
+				04431BB31FCD05960099580A /* QQHomeCell.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		51E8E3D2AB579B9F94D7E1F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86A83C2B1E70D4F1EAB674CB /* libPods-QQLive.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6D949B926010AD154AF372CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F737E6EF8C8376D7E1988AFB /* Pods-QQLive.debug.xcconfig */,
+				A98C5534DCB19713F47B9851 /* Pods-QQLive.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04431BA11FCCFED20099580A /* Build configuration list for PBXNativeTarget "QQLive" */;
 			buildPhases = (
+				A14461C6C1CCC6987485506F /* [CP] Check Pods Manifest.lock */,
 				04431B871FCCFED20099580A /* Sources */,
 				04431B881FCCFED20099580A /* Frameworks */,
 				04431B891FCCFED20099580A /* Resources */,
+				2046CF9324C61E8434BC82C2 /* [CP] Embed Pods Frameworks */,
+				A93BDA87D920D69E5799FDBD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,6 +218,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2046CF9324C61E8434BC82C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QQLive/Pods-QQLive-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A14461C6C1CCC6987485506F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QQLive-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A93BDA87D920D69E5799FDBD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QQLive/Pods-QQLive-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04431B871FCCFED20099580A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -193,6 +276,7 @@
 			files = (
 				04431BA91FCCFF2E0099580A /* main.m in Sources */,
 				04431BB11FCCFF500099580A /* QQHomeViewController.m in Sources */,
+				04431BB41FCD05960099580A /* QQHomeCell.m in Sources */,
 				04431BAA1FCCFF2E0099580A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,6 +409,7 @@
 		};
 		04431BA21FCCFED20099580A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F737E6EF8C8376D7E1988AFB /* Pods-QQLive.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -339,6 +424,7 @@
 		};
 		04431BA31FCCFED20099580A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A98C5534DCB19713F47B9851 /* Pods-QQLive.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
