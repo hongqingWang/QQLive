@@ -24,7 +24,7 @@ typedef NS_ENUM(NSInteger, PanDirection){
 // AVPlayerLayer视图容器层
 @property (nonatomic, weak) UIView *playerLayerView;
 // 控制，互动层
-@property (nonatomic, strong) LMPlayerControlView *playerControlView;
+@property (nonatomic, strong) QQPlayerControlView *playerControlView;
 /** 播放器的参数模型 */
 @property (nonatomic, strong) QQPlayerStatusModel *playerStatusModel;
 
@@ -500,9 +500,10 @@ typedef NS_ENUM(NSInteger, PanDirection){
 }
 
 #pragma mark - getter
-- (LMPlayerControlView *)playerControlView {
+- (QQPlayerControlView *)playerControlView {
+    
     if (!_playerControlView) {
-        _playerControlView = [LMPlayerControlView playerControlViewWithStatusModel:self.playerStatusModel];
+        _playerControlView = [QQPlayerControlView playerControlViewWithStatusModel:self.playerStatusModel];
     }
     return _playerControlView;
 }

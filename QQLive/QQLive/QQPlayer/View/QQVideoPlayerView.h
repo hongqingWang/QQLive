@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LMPlayerControlView.h"
+#import "QQPlayerControlView.h"
 @class QQPlayerStatusModel;
 
 @protocol QQVideoPlayerViewDelagate <NSObject>
@@ -28,7 +28,7 @@
 @interface QQVideoPlayerView : UIView
 
 /** 视频控制层, 自定义层 */
-@property (nonatomic, strong, readonly) LMPlayerControlView *playerControlView;
+@property (nonatomic, strong, readonly) QQPlayerControlView *playerControlView;
 /** 未播放, 封面的View */
 @property (nonatomic, strong) QQCoverControlView *coverControlView;
 /** 未播放, loading时的View */

@@ -12,7 +12,7 @@
 #import "QQVideoPlayerView.h"
 #import "LMBrightnessView.h"
 
-@interface QQVideoPlayer ()<QQPlayerManagerDelegate, LMPlayerControlViewDelagate, QQPortraitControlViewDelegate, QQLandScapeControlViewDelegate, QQVideoPlayerViewDelagate, QQLoadingViewDelegate, QQCoverControlViewDelegate>
+@interface QQVideoPlayer ()<QQPlayerManagerDelegate, QQPlayerControlViewDelagate, QQPortraitControlViewDelegate, QQLandScapeControlViewDelegate, QQVideoPlayerViewDelagate, QQLoadingViewDelegate, QQCoverControlViewDelegate>
 
 // 代理
 @property (nonatomic, weak) id<QQVideoPlayerDelegate> delegate;
@@ -255,7 +255,7 @@
     LMBrightnessViewShared.isStartPlay = YES;
 }
 
-#pragma mark - LMPlayerControlViewDelagate
+#pragma mark - QQPlayerControlViewDelagate
 /** 加载失败按钮被点击 */
 - (void)failButtonClick {
     [self configLMPlayer];

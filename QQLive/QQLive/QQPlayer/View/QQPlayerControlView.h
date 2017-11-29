@@ -1,9 +1,9 @@
 //
-//  LMPlayerControlView.h
-//  lamiantv
+//  QQPlayerControlView.h
+//  QQLive
 //
-//  Created by 李小南 on 2016/12/2.
-//  Copyright © 2016年 AiPai. All rights reserved.
+//  Created by Mac on 2017/11/29.
+//  Copyright © 2017年 Mac. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -13,7 +13,8 @@
 #import "QQCoverControlView.h"
 @class QQPlayerStatusModel;
 
-@protocol LMPlayerControlViewDelagate <NSObject>
+@protocol QQPlayerControlViewDelagate <NSObject>
+
 @optional
 /** 加载失败按钮被点击 */
 - (void)failButtonClick;
@@ -26,9 +27,11 @@
 
 @end
 
-@interface LMPlayerControlView : UIView
+@interface QQPlayerControlView : UIView
+
 + (instancetype)playerControlViewWithStatusModel:(QQPlayerStatusModel *)playerStatusModel;
-@property (nonatomic, weak) id<LMPlayerControlViewDelagate> delegate;
+
+@property (nonatomic, weak) id <QQPlayerControlViewDelagate> delegate;
 /** 是否显示了控制层 */
 @property (nonatomic, assign, getter=isShowing, readonly) BOOL showing;
 

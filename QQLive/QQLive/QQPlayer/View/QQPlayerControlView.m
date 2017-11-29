@@ -1,21 +1,22 @@
 //
-//  LMPlayerControlView.m
-//  lamiantv
+//  QQPlayerControlView.m
+//  QQLive
 //
-//  Created by 李小南 on 2016/12/2.
-//  Copyright © 2016年 AiPai. All rights reserved.
+//  Created by Mac on 2017/11/29.
+//  Copyright © 2017年 Mac. All rights reserved.
 //
 
-#import "LMPlayerControlView.h"
+#import "QQPlayerControlView.h"
 #import "QQPlayerStatusModel.h"
 #import "MMMaterialDesignSpinner.h"
 #import <Masonry.h>
 #import "UIColor+Hex.h"
 
-static const CGFloat LMPlayerAnimationTimeInterval             = 7.0f;
-static const CGFloat LMPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
+static const CGFloat QQPlayerAnimationTimeInterval             = 7.0f;
+static const CGFloat QQPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
 
-@interface LMPlayerControlView ()
+@interface QQPlayerControlView ()
+
 /** 加载loading */
 @property (nonatomic, strong) MMMaterialDesignSpinner *activity;
 /** 快进快退View */
@@ -45,12 +46,14 @@ static const CGFloat LMPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
 @property (nonatomic, assign, getter=isPlayEnd) BOOL  playeEnd;
 /** 播放器的参数模型 */
 @property (nonatomic, strong) QQPlayerStatusModel *playerStatusModel;
+
 @end
 
-@implementation LMPlayerControlView
+@implementation QQPlayerControlView
 
 + (instancetype)playerControlViewWithStatusModel:(QQPlayerStatusModel *)playerStatusModel {
-    LMPlayerControlView *instance = [[self alloc] init];
+    
+    QQPlayerControlView *instance = [[self alloc] init];
     instance.playerStatusModel = playerStatusModel;
     return instance;
 }
@@ -162,7 +165,7 @@ static const CGFloat LMPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
         self.portraitControlView.hidden = NO;
         self.landScapeControlView.hidden = YES;
     }
-
+    
     [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
 }
 
@@ -182,7 +185,7 @@ static const CGFloat LMPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
  */
 - (void)autoFadeOutControlView {
     [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(hideControl) object:nil];
-    [self performSelector:@selector(hideControl) withObject:nil afterDelay:LMPlayerAnimationTimeInterval];
+    [self performSelector:@selector(hideControl) withObject:nil afterDelay:QQPlayerAnimationTimeInterval];
 }
 
 /**
@@ -204,7 +207,7 @@ static const CGFloat LMPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
     self.backgroundColor = [UIColor clearColor];
     self.showing = NO;
     self.playeEnd = NO;
-//    self.dragged = NO;
+    //    self.dragged = NO;
     
     self.watchrRecordView.hidden = YES;
     self.viewTime = 0;
@@ -248,7 +251,7 @@ static const CGFloat LMPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
         return;
     }
     [self playerCancelAutoFadeOutControlView];
-    [UIView animateWithDuration:LMPlayerControlBarAutoFadeOutTimeInterval animations:^{
+    [UIView animateWithDuration:QQPlayerControlBarAutoFadeOutTimeInterval animations:^{
         [self showControlView];
     } completion:^(BOOL finished) {
         self.showing = YES;
@@ -260,7 +263,7 @@ static const CGFloat LMPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
 - (void)hideControl {
     if (!self.isShowing) { return; }
     [self playerCancelAutoFadeOutControlView];
-    [UIView animateWithDuration:LMPlayerControlBarAutoFadeOutTimeInterval animations:^{
+    [UIView animateWithDuration:QQPlayerControlBarAutoFadeOutTimeInterval animations:^{
         [self hideControlView];
     }completion:^(BOOL finished) {
         self.showing = NO;
@@ -432,7 +435,7 @@ static const CGFloat LMPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
     }];
     
     [self.watchrRecordView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.width.mas_equalTo(260);
+        //        make.width.mas_equalTo(260);
         make.height.mas_equalTo(30);
         make.left.mas_equalTo(self);
         make.right.mas_equalTo(self.watchrRecordLabel.mas_right).offset(80);
@@ -448,7 +451,7 @@ static const CGFloat LMPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
     [self.watchrRecordLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.closeWatchrRecordBtn.mas_right);
         make.top.height.mas_equalTo(self.watchrRecordView);
-//        make.width.mas_equalTo(140); // ?
+        //        make.width.mas_equalTo(140); // ?
     }];
     
     [self.jumpPlayBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -527,7 +530,7 @@ static const CGFloat LMPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
         _failBtn.titleLabel.font = [UIFont systemFontOfSize:14.0];
         _failBtn.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.7];
         
-//        _failBtn.backgroundColor = [UIColor redColor];
+        //        _failBtn.backgroundColor = [UIColor redColor];
     }
     return _failBtn;
 }
@@ -578,6 +581,5 @@ static const CGFloat LMPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
     }
     return _jumpPlayBtn;
 }
-
 
 @end
