@@ -9,7 +9,7 @@
 #import "QQVideoPlayerView.h"
 #import "QQPlayerStatusModel.h"
 #import <Masonry.h>
-#import "LMBrightnessView.h"
+#import "QQBrightnessView.h"
 
 // 枚举值，包含水平移动方向和垂直移动方向
 typedef NS_ENUM(NSInteger, PanDirection){
@@ -240,7 +240,7 @@ typedef NS_ENUM(NSInteger, PanDirection){
  */
 - (void)onDeviceOrientationChange {
     
-    if (!LMBrightnessViewShared.isStartPlay || !_playerControlView) {
+    if (!QQBrightnessViewShared.isStartPlay || !_playerControlView) {
         return;
     }
     

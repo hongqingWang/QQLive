@@ -61,7 +61,7 @@
         self.isPlaying = NO;
         [self.player playVideo];
     }
-    LMBrightnessViewShared.isStartPlay = self.isStartPlay;
+    QQBrightnessViewShared.isStartPlay = self.isStartPlay;
 }
 
 - (void)viewDidLoad {
@@ -96,7 +96,7 @@
         [self.player pauseVideo];
     }
     
-    LMBrightnessViewShared.isStartPlay = NO;
+    QQBrightnessViewShared.isStartPlay = NO;
     
 //    [self.player pause];
 //    [self.player stop];

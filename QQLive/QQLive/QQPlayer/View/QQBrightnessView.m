@@ -1,35 +1,37 @@
 //
-//  LMBrightnessView.m
-//  拉面视频Demo
+//  QQBrightnessView.m
+//  QQLive
 //
-//  Created by 李小南 on 16/9/1.
-//  Copyright © 2016年 lamiantv. All rights reserved.
+//  Created by Mac on 2017/11/29.
+//  Copyright © 2017年 Mac. All rights reserved.
 //
 
-#import "LMBrightnessView.h"
+#import "QQBrightnessView.h"
 
 // 屏幕的宽
 #define ScreenWidth [[UIScreen mainScreen] bounds].size.width
 // 屏幕的高
 #define ScreenHeight [[UIScreen mainScreen] bounds].size.height
 
-@interface LMBrightnessView ()
+@interface QQBrightnessView ()
 
-@property (nonatomic, strong) UIImageView		*backImage;
-@property (nonatomic, strong) UILabel			*title;
-@property (nonatomic, strong) UIView			*longView;
-@property (nonatomic, strong) NSMutableArray	*tipArray;
-@property (nonatomic, assign) BOOL				orientationDidChange;
+@property (nonatomic, strong) UIImageView        *backImage;
+@property (nonatomic, strong) UILabel            *title;
+@property (nonatomic, strong) UIView            *longView;
+@property (nonatomic, strong) NSMutableArray    *tipArray;
+@property (nonatomic, assign) BOOL                orientationDidChange;
 
 @end
 
-@implementation LMBrightnessView
+@implementation QQBrightnessView
 
 + (instancetype)sharedBrightnessView {
-    static LMBrightnessView *instance;
+    
+    static QQBrightnessView *instance;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        instance = [[LMBrightnessView alloc] init];
+        
+        instance = [[QQBrightnessView alloc] init];
         [[UIApplication sharedApplication].keyWindow addSubview:instance];
     });
     return instance;

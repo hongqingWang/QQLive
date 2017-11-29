@@ -10,7 +10,7 @@
 #import "QQPlayerManager.h"
 #import "QQPlayerStatusModel.h"
 #import "QQVideoPlayerView.h"
-#import "LMBrightnessView.h"
+#import "QQBrightnessView.h"
 
 @interface QQVideoPlayer ()<QQPlayerManagerDelegate, QQPlayerControlViewDelagate, QQPortraitControlViewDelegate, QQLandScapeControlViewDelegate, QQVideoPlayerViewDelagate, QQLoadingViewDelegate, QQCoverControlViewDelegate>
 
@@ -207,7 +207,7 @@
             [self.videoPlayerView loadFailed];
             self.videoPlayerView.loadingView.hidden = YES;
             
-            LMBrightnessViewShared.isStartPlay = YES;
+            QQBrightnessViewShared.isStartPlay = YES;
             [self.videoPlayerView.playerControlView loadFailed];
         }
             break;
@@ -252,7 +252,7 @@
     [self.videoPlayerView startReadyToPlay];
     self.videoPlayerView.loadingView.hidden = YES;
     
-    LMBrightnessViewShared.isStartPlay = YES;
+    QQBrightnessViewShared.isStartPlay = YES;
 }
 
 #pragma mark - QQPlayerControlViewDelagate
