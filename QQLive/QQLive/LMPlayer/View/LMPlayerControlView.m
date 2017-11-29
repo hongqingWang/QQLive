@@ -459,9 +459,9 @@ static const CGFloat LMPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
 
 #pragma mark - getter
 
-- (LMPortraitControlView *)portraitControlView {
+- (QQPortraitControlView *)portraitControlView {
     if (!_portraitControlView) {
-        _portraitControlView = [[LMPortraitControlView alloc] init];
+        _portraitControlView = [[QQPortraitControlView alloc] init];
     }
     return _portraitControlView;
 }

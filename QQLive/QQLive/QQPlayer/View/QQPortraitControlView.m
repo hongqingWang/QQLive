@@ -1,16 +1,17 @@
 //
-//  LMPortraitControlView.m
-//  拉面视频Demo
+//  QQPortraitControlView.m
+//  QQLive
 //
-//  Created by 李小南 on 16/9/1.
-//  Copyright © 2016年 lamiantv. All rights reserved.
-//  
+//  Created by Mac on 2017/11/29.
+//  Copyright © 2017年 Mac. All rights reserved.
+//
 
-#import "LMPortraitControlView.h"
+#import "QQPortraitControlView.h"
 #import <Masonry.h>
 #import "UIColor+Hex.h"
 
-@interface LMPortraitControlView ()
+@interface QQPortraitControlView ()
+
 /** 返回按钮 */
 @property (nonatomic, strong) UIButton *backBtn;
 /** 分享按钮 */
@@ -31,9 +32,10 @@
 @property (nonatomic, strong) UIButton *fullScreenBtn;
 
 @property (nonatomic, assign) double durationTime;
+
 @end
 
-@implementation LMPortraitControlView
+@implementation QQPortraitControlView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
@@ -349,6 +351,5 @@
     }
     return _fullScreenBtn;
 }
-
 
 @end

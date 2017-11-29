@@ -1,14 +1,14 @@
 //
-//  LMPortraitControlView.h
-//  拉面视频Demo
+//  QQPortraitControlView.h
+//  QQLive
 //
-//  Created by 李小南 on 16/9/1.
-//  Copyright © 2016年 lamiantv. All rights reserved.
-//  竖屏下的控制view
+//  Created by Mac on 2017/11/29.
+//  Copyright © 2017年 Mac. All rights reserved.
+//
 
 #import <UIKit/UIKit.h>
 
-@protocol LMPortraitControlViewDelegate <NSObject>
+@protocol QQPortraitControlViewDelegate <NSObject>
 
 /** 返回按钮被点击 */
 - (void)portraitBackButtonClick;
@@ -24,10 +24,12 @@
 - (void)portraitFullScreenButtonClick;
 /** 进度条tap点击 */
 - (void)portraitProgressSliderTapAction:(CGFloat)value;
+
 @end
 
-@interface LMPortraitControlView : UIView
-@property (nonatomic, weak) id<LMPortraitControlViewDelegate> delegate;
+@interface QQPortraitControlView : UIView
+
+@property (nonatomic, weak) id <QQPortraitControlViewDelegate> delegate;
 /** 重置ControlView */
 - (void)playerResetControlView;
 - (void)playEndHideView:(BOOL)playeEnd;
@@ -49,4 +51,5 @@
 
 /** 更新视频时长 */
 - (void)syncDurationTime:(NSInteger)time;
+
 @end

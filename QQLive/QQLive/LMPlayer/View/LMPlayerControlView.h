@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "QQLoadingView.h"
-#import "LMPortraitControlView.h"
 #import "QQLandScapeControlView.h"
+#import "QQPortraitControlView.h"
 #import "QQCoverControlView.h"
 @class QQPlayerStatusModel;
 
@@ -33,7 +33,7 @@
 @property (nonatomic, assign, getter=isShowing, readonly) BOOL showing;
 
 /** 竖屏控制层的View */
-@property (nonatomic, strong) LMPortraitControlView *portraitControlView;
+@property (nonatomic, strong) QQPortraitControlView *portraitControlView;
 /** 横屏控制层的View */
 @property (nonatomic, strong) QQLandScapeControlView *landScapeControlView;
 /** 上次播放至xx秒(默认0) */
