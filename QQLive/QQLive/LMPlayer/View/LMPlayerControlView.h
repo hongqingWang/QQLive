@@ -11,7 +11,7 @@
 #import "LMLandScapeControlView.h"
 #import "LMCoverControlView.h"
 #import "LMLoadingView.h"
-@class LMPlayerStatusModel;
+@class QQPlayerStatusModel;
 
 @protocol LMPlayerControlViewDelagate <NSObject>
 @optional
@@ -27,7 +27,7 @@
 @end
 
 @interface LMPlayerControlView : UIView
-+ (instancetype)playerControlViewWithStatusModel:(LMPlayerStatusModel *)playerStatusModel;
++ (instancetype)playerControlViewWithStatusModel:(QQPlayerStatusModel *)playerStatusModel;
 @property (nonatomic, weak) id<LMPlayerControlViewDelagate> delegate;
 /** 是否显示了控制层 */
 @property (nonatomic, assign, getter=isShowing, readonly) BOOL showing;

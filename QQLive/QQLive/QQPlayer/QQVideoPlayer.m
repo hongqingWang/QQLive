@@ -8,11 +8,11 @@
 
 #import "QQVideoPlayer.h"
 #import "QQPlayerManager.h"
+#import "QQPlayerStatusModel.h"
 #import "LMVideoPlayerView.h"
-#import "LMPlayerStatusModel.h"
 #import "LMBrightnessView.h"
 
-@interface QQVideoPlayer ()<QQPlayerManagerDelegate, LMPlayerControlViewDelagate, LMPortraitControlViewDelegate, LMLandScapeControlViewDelegate, LMVideoPlayerViewDelagate, LMLoadingViewDelegate, LMCoverControlViewDelegate>
+@interface QQVideoPlayer ()<QQPlayerManagerDelegate, LMPlayerControlViewDelagate, LMPortraitControlViewDelegate, LMLandScapeControlViewDelegate, QQVideoPlayerViewDelagate, LMLoadingViewDelegate, LMCoverControlViewDelegate>
 
 // 代理
 @property (nonatomic, weak) id<QQVideoPlayerDelegate> delegate;
@@ -23,7 +23,7 @@
 /** 播放数据模型 */
 @property (nonatomic, strong) QQPlayerModel *playerModel;
 /** 播放器的参数模型 */
-@property (nonatomic, strong) LMPlayerStatusModel *playerStatusModel;
+@property (nonatomic, strong) QQPlayerStatusModel *playerStatusModel;
 
 
 /** 用来保存pan手势快进的总时长 */
@@ -57,7 +57,7 @@
     instance.delegate = delegate;
     
     // 创建状态模型
-    instance.playerStatusModel = [[LMPlayerStatusModel alloc] init];
+    instance.playerStatusModel = [[QQPlayerStatusModel alloc] init];
     [instance.playerStatusModel playerResetStatusModel];
     
     // !!!: 最底层视图创建

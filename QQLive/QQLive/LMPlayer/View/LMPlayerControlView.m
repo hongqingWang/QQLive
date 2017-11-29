@@ -7,10 +7,10 @@
 //
 
 #import "LMPlayerControlView.h"
+#import "QQPlayerStatusModel.h"
 #import "MMMaterialDesignSpinner.h"
 #import <Masonry.h>
 #import "UIColor+Hex.h"
-#import "LMPlayerStatusModel.h"
 
 static const CGFloat LMPlayerAnimationTimeInterval             = 7.0f;
 static const CGFloat LMPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
@@ -44,12 +44,12 @@ static const CGFloat LMPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
 /** 是否播放结束 */
 @property (nonatomic, assign, getter=isPlayEnd) BOOL  playeEnd;
 /** 播放器的参数模型 */
-@property (nonatomic, strong) LMPlayerStatusModel *playerStatusModel;
+@property (nonatomic, strong) QQPlayerStatusModel *playerStatusModel;
 @end
 
 @implementation LMPlayerControlView
 
-+ (instancetype)playerControlViewWithStatusModel:(LMPlayerStatusModel *)playerStatusModel {
++ (instancetype)playerControlViewWithStatusModel:(QQPlayerStatusModel *)playerStatusModel {
     LMPlayerControlView *instance = [[self alloc] init];
     instance.playerStatusModel = playerStatusModel;
     return instance;

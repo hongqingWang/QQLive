@@ -7,9 +7,9 @@
 //
 
 #import "LMVideoPlayerView.h"
+#import "QQPlayerStatusModel.h"
 #import <Masonry.h>
 #import "LMBrightnessView.h"
-#import "LMPlayerStatusModel.h"
 
 // 枚举值，包含水平移动方向和垂直移动方向
 typedef NS_ENUM(NSInteger, PanDirection){
@@ -18,7 +18,7 @@ typedef NS_ENUM(NSInteger, PanDirection){
 };
 
 @interface LMVideoPlayerView ()<UIGestureRecognizerDelegate>
-@property (nonatomic, weak) id<LMVideoPlayerViewDelagate> delegate;
+@property (nonatomic, weak) id <QQVideoPlayerViewDelagate> delegate;
 @property (nonatomic, weak) UIView *videoView;
 
 // AVPlayerLayer视图容器层
@@ -26,7 +26,7 @@ typedef NS_ENUM(NSInteger, PanDirection){
 // 控制，互动层
 @property (nonatomic, strong) LMPlayerControlView *playerControlView;
 /** 播放器的参数模型 */
-@property (nonatomic, strong) LMPlayerStatusModel *playerStatusModel;
+@property (nonatomic, strong) QQPlayerStatusModel *playerStatusModel;
 
 
 /** 是否在调节音量 */
@@ -64,7 +64,7 @@ typedef NS_ENUM(NSInteger, PanDirection){
 }
 
 // !!!: 创建对象
-+ (instancetype)videoPlayerViewWithSuperView:(UIView *)superview delegate:(id<LMVideoPlayerViewDelagate>)delegate playerStatusModel:(LMPlayerStatusModel *)playerStatusModel {
++ (instancetype)videoPlayerViewWithSuperView:(UIView *)superview delegate:(id<QQVideoPlayerViewDelagate>)delegate playerStatusModel:(QQPlayerStatusModel *)playerStatusModel {
     
     LMVideoPlayerView *instance = [[LMVideoPlayerView alloc] init];
     instance.videoView = superview;

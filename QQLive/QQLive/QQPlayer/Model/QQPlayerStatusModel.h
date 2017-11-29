@@ -1,14 +1,15 @@
 //
-//  LMPlayerStatusModel.h
-//  IJK播放器Demo
+//  QQPlayerStatusModel.h
+//  QQLive
 //
-//  Created by 李小南 on 2017/3/30.
-//  Copyright © 2017年 lamiantv. All rights reserved.
-//  公有播放状态模型
+//  Created by Mac on 2017/11/29.
+//  Copyright © 2017年 Mac. All rights reserved.
+//
 
 #import <Foundation/Foundation.h>
 
-@interface LMPlayerStatusModel : NSObject
+@interface QQPlayerStatusModel : NSObject
+
 /** 是否自动播放 */
 @property (nonatomic, assign, getter=isAutoPlay) BOOL autoPlay;
 /** 是否被用户暂停 */

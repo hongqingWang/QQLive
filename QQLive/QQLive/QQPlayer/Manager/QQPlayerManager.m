@@ -7,8 +7,8 @@
 //
 
 #import "QQPlayerManager.h"
+#import "QQPlayerStatusModel.h"
 #import <IJKMediaFramework/IJKMediaFramework.h>
-#import "LMPlayerStatusModel.h"
 #import <AVFoundation/AVFoundation.h>
 
 @interface QQPlayerManager ()
@@ -21,7 +21,7 @@
 /** 定时器 */
 @property (nonatomic, weak) NSTimer *timer;
 /** 播放器的参数模型 */
-@property (nonatomic, strong) LMPlayerStatusModel *playerStatusModel;
+@property (nonatomic, strong) QQPlayerStatusModel *playerStatusModel;
 /** 声音滑杆 */
 @property (nonatomic, strong) UISlider *volumeViewSlider;
 
@@ -32,7 +32,7 @@
 
 @implementation QQPlayerManager
 
-+ (instancetype)playerManagerWithDelegate:(id<QQPlayerManagerDelegate>)delegate playerStatusModel:(LMPlayerStatusModel *)playerStatusModel {
++ (instancetype)playerManagerWithDelegate:(id<QQPlayerManagerDelegate>)delegate playerStatusModel:(QQPlayerStatusModel *)playerStatusModel {
     
     QQPlayerManager *playerMgr = [[QQPlayerManager alloc] init];
     playerMgr.delegate = delegate;

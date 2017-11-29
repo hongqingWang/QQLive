@@ -11,5 +11,5 @@
 
 #import "QQVideoPlayer.h"
 #import "QQPlayerModel.h"
-#import "LMPlayerStatusModel.h"
+#import "QQPlayerStatusModel.h"
 #import "LMBrightnessView.h"

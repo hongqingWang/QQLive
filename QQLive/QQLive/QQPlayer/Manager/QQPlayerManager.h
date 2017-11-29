@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 
 @class QQPlayerManager;
-@class LMPlayerStatusModel;
+@class QQPlayerStatusModel;
 
 // 播放器的几种状态
 typedef NS_ENUM(NSInteger, LMPlayerState) {
@@ -43,7 +43,7 @@ typedef NS_ENUM(NSInteger, LMPlayerState) {
 
 /** playerLayerView */
 @property (nonatomic, strong, readonly) UIView *playerLayerView;
-+ (instancetype)playerManagerWithDelegate:(id<QQPlayerManagerDelegate>)delegate playerStatusModel:(LMPlayerStatusModel *)playerStatusModel;
++ (instancetype)playerManagerWithDelegate:(id<QQPlayerManagerDelegate>)delegate playerStatusModel:(QQPlayerStatusModel *)playerStatusModel;
 - (void)initPlayerWithUrl:(NSURL *)url;
 
 /** 获取视频时长，单位：秒 */

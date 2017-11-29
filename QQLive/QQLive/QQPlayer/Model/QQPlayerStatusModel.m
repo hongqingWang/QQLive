@@ -1,14 +1,14 @@
 //
-//  LMPlayerStatusModel.m
-//  IJK播放器Demo
+//  QQPlayerStatusModel.m
+//  QQLive
 //
-//  Created by 李小南 on 2017/3/30.
-//  Copyright © 2017年 lamiantv. All rights reserved.
+//  Created by Mac on 2017/11/29.
+//  Copyright © 2017年 Mac. All rights reserved.
 //
 
-#import "LMPlayerStatusModel.h"
+#import "QQPlayerStatusModel.h"
 
-@implementation LMPlayerStatusModel
+@implementation QQPlayerStatusModel
 
 /**
  重置状态模型属性
@@ -21,4 +21,5 @@
     self.pauseByUser = YES;
     self.fullScreen = NO;
 }
+
 @end

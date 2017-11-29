@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "LMPlayerControlView.h"
 
-@class LMPlayerStatusModel;
+@class QQPlayerStatusModel;
 
-@protocol LMVideoPlayerViewDelagate <NSObject>
+@protocol QQVideoPlayerViewDelagate <NSObject>
 @optional
 /** 双击事件 */
 - (void)doubleTapAction;
@@ -39,8 +39,8 @@
  *
  */
 + (instancetype)videoPlayerViewWithSuperView:(UIView *)superview
-                                    delegate:(id<LMVideoPlayerViewDelagate>)delegate
-                           playerStatusModel:(LMPlayerStatusModel *)playerStatusModel;
+                                    delegate:(id <QQVideoPlayerViewDelagate>)delegate
+                           playerStatusModel:(QQPlayerStatusModel *)playerStatusModel;
 
 /** 当前是否为全屏，默认为NO */
 //@property (nonatomic, assign, getter=isFullScreen, readonly) BOOL fullScreen;
