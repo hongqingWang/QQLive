@@ -12,7 +12,7 @@
 #import "QQVideoPlayerView.h"
 #import "LMBrightnessView.h"
 
-@interface QQVideoPlayer ()<QQPlayerManagerDelegate, LMPlayerControlViewDelagate, LMPortraitControlViewDelegate, LMLandScapeControlViewDelegate, QQVideoPlayerViewDelagate, LMLoadingViewDelegate, LMCoverControlViewDelegate>
+@interface QQVideoPlayer ()<QQPlayerManagerDelegate, LMPlayerControlViewDelagate, LMPortraitControlViewDelegate, LMLandScapeControlViewDelegate, QQVideoPlayerViewDelagate, QQLoadingViewDelegate, LMCoverControlViewDelegate>
 
 // 代理
 @property (nonatomic, weak) id<QQVideoPlayerDelegate> delegate;
@@ -510,7 +510,7 @@
     [self.playerMgr changeVolume:value];
 }
 
-#pragma mark - LMLoadingViewDelegate
+#pragma mark - QQLoadingViewDelegate
 /** 返回按钮被点击 */
 - (void)loadingViewBackButtonClick {
     if ([self.delegate respondsToSelector:@selector(playerBackButtonClick)]) {

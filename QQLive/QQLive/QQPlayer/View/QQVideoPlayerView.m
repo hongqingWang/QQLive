@@ -514,9 +514,9 @@ typedef NS_ENUM(NSInteger, PanDirection){
     return _coverControlView;
 }
 
-- (LMLoadingView *)loadingView {
+- (QQLoadingView *)loadingView {
     if (!_loadingView) {
-        _loadingView = [[LMLoadingView alloc] init];
+        _loadingView = [[QQLoadingView alloc] init];
     }
     return _loadingView;
 }

@@ -1,17 +1,16 @@
 //
-//  LMLoadingView.m
-//  拉面视频Demo
+//  QQLoadingView.m
+//  QQLive
 //
-//  Created by 李小南 on 2016/10/12.
-//  Copyright © 2016年 lamiantv. All rights reserved.
+//  Created by Mac on 2017/11/29.
+//  Copyright © 2017年 Mac. All rights reserved.
 //
 
-#import "LMLoadingView.h"
+#import "QQLoadingView.h"
+#import <Masonry.h>
 #import "MMMaterialDesignSpinner.h"
 
-#import <Masonry.h>
-
-@interface LMLoadingView ()
+@interface QQLoadingView ()
 /** 返回按钮 */
 @property (nonatomic, strong) UIButton *backBtn;
 /** 分享按钮 */
@@ -19,7 +18,7 @@
 @property (nonatomic, strong) MMMaterialDesignSpinner *activity;
 @end
 
-@implementation LMLoadingView
+@implementation QQLoadingView
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -119,4 +118,5 @@
     }
     return _activity;
 }
+
 @end

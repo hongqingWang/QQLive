@@ -32,7 +32,7 @@
 /** 未播放, 封面的View */
 @property (nonatomic, strong) LMCoverControlView *coverControlView;
 /** 未播放, loading时的View */
-@property (nonatomic, strong) LMLoadingView *loadingView;
+@property (nonatomic, strong) QQLoadingView *loadingView;
 
 /*
  *
