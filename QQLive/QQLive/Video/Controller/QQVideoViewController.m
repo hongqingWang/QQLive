@@ -14,7 +14,7 @@
 #import "QQVideoCell.h"
 #import <Masonry.h>
 
-#import "LMPlayer.h"
+#import "QQPlayer.h"
 
 #define QQ_PLAY_VIDEO_CELL_HEIGHT               200
 
@@ -75,15 +75,15 @@
     /**
      * 监听通知只为了拿到视频的宽高,但是拿到了目前用途不大
      */
-    [[NSNotificationCenter defaultCenter] addObserverForName:IJKMPMovieNaturalSizeAvailableNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
-        NSLog(@"IJKMPMovieNaturalSizeAvailableNotification = %@", note.object);
-        IJKFFMoviePlayerController *vc = note.object;
-        NSLog(@"vc.naturalSize = %@", NSStringFromCGSize(vc.naturalSize));
-        NSInteger videoWidth = vc.naturalSize.width;
-        NSInteger videoHeigth = vc.naturalSize.height;
-        NSLog(@"aaa===%ld", videoWidth);
-        NSLog(@"%ld", videoHeigth);
-    }];
+//    [[NSNotificationCenter defaultCenter] addObserverForName:IJKMPMovieNaturalSizeAvailableNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
+//        NSLog(@"IJKMPMovieNaturalSizeAvailableNotification = %@", note.object);
+//        IJKFFMoviePlayerController *vc = note.object;
+//        NSLog(@"vc.naturalSize = %@", NSStringFromCGSize(vc.naturalSize));
+//        NSInteger videoWidth = vc.naturalSize.width;
+//        NSInteger videoHeigth = vc.naturalSize.height;
+//        NSLog(@"aaa===%ld", videoWidth);
+//        NSLog(@"%ld", videoHeigth);
+//    }];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -150,21 +150,12 @@
 #pragma mark - 添加子控件的约束
 - (void)makePlayViewConstraints {
     
-    if (IS_IPHONE_4) {
-        [self.playerFatherView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.mas_equalTo(20);
-            make.leading.trailing.mas_equalTo(0);
-            // 这里宽高比16：9,可自定义宽高比
-            make.height.mas_equalTo(self.playerFatherView.mas_width).multipliedBy(2.0f/3.0f);
-        }];
-    } else {
-        [self.playerFatherView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.mas_equalTo(20);
-            make.leading.trailing.mas_equalTo(0);
-            // 这里宽高比16：9,可自定义宽高比
-            make.height.mas_equalTo(self.playerFatherView.mas_width).multipliedBy(9.0f/16.0f);
-        }];
-    }
+    [self.playerFatherView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(20);
+        make.leading.trailing.mas_equalTo(0);
+        // 这里宽高比16：9,可自定义宽高比
+        make.height.mas_equalTo(self.playerFatherView.mas_width).multipliedBy(9.0f/16.0f);
+    }];
     
     [self.topView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.top.left.right.equalTo(self.view);
