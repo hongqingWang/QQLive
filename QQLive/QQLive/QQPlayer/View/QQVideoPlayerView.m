@@ -1,12 +1,12 @@
 //
-//  LMVideoPlayerView.m
-//  IJK播放器Demo
+//  QQVideoPlayerView.m
+//  QQLive
 //
-//  Created by 李小南 on 2017/3/28.
-//  Copyright © 2017年 lamiantv. All rights reserved.
+//  Created by Mac on 2017/11/29.
+//  Copyright © 2017年 Mac. All rights reserved.
 //
 
-#import "LMVideoPlayerView.h"
+#import "QQVideoPlayerView.h"
 #import "QQPlayerStatusModel.h"
 #import <Masonry.h>
 #import "LMBrightnessView.h"
@@ -17,7 +17,7 @@ typedef NS_ENUM(NSInteger, PanDirection){
     PanDirectionVerticalMoved    // 纵向移动
 };
 
-@interface LMVideoPlayerView ()<UIGestureRecognizerDelegate>
+@interface QQVideoPlayerView ()<UIGestureRecognizerDelegate>
 @property (nonatomic, weak) id <QQVideoPlayerViewDelagate> delegate;
 @property (nonatomic, weak) UIView *videoView;
 
@@ -41,7 +41,7 @@ typedef NS_ENUM(NSInteger, PanDirection){
 @property (nonatomic, strong) UIPanGestureRecognizer *panRecognizer;
 @end
 
-@implementation LMVideoPlayerView
+@implementation QQVideoPlayerView
 #pragma mark - override
 
 - (void)willMoveToSuperview:(UIView *)newSuperview {
@@ -66,15 +66,15 @@ typedef NS_ENUM(NSInteger, PanDirection){
 // !!!: 创建对象
 + (instancetype)videoPlayerViewWithSuperView:(UIView *)superview delegate:(id<QQVideoPlayerViewDelagate>)delegate playerStatusModel:(QQPlayerStatusModel *)playerStatusModel {
     
-    LMVideoPlayerView *instance = [[LMVideoPlayerView alloc] init];
+    QQVideoPlayerView *instance = [[QQVideoPlayerView alloc] init];
     instance.videoView = superview;
     instance.delegate = delegate;
     instance.playerStatusModel = playerStatusModel;
     
     [instance addToSuperView:superview];
-//    [instance ui];
-//    [instance listeningRotating];
-//    [instance createGesture]; //
+    //    [instance ui];
+    //    [instance listeningRotating];
+    //    [instance createGesture]; //
     
     
     [instance addSubviewWithCons];
@@ -106,7 +106,7 @@ typedef NS_ENUM(NSInteger, PanDirection){
         [self removeFromSuperview];
     }
     
-//    self.frame = superView.bounds;
+    //    self.frame = superView.bounds;
     [superView addSubview:self];
     [self mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.left.right.bottom.mas_equalTo(superView);
@@ -187,20 +187,20 @@ typedef NS_ENUM(NSInteger, PanDirection){
  *  @param gesture UITapGestureRecognizer
  */
 - (void)singleTapAction:(UIGestureRecognizer *)gesture {
-//    if ([gesture isKindOfClass:[NSNumber class]] && ![(id)gesture boolValue]) {
-//        [self _fullScreenAction];
-//        return;
-//    }
+    //    if ([gesture isKindOfClass:[NSNumber class]] && ![(id)gesture boolValue]) {
+    //        [self _fullScreenAction];
+    //        return;
+    //    }
     
-//    if (gesture.state == UIGestureRecognizerStateRecognized) {
+    //    if (gesture.state == UIGestureRecognizerStateRecognized) {
     
-        if (self.playerStatusModel.playDidEnd) { return; }
-        if (self.playerControlView.isShowing) {
-            [self.playerControlView hideControl];
-        } else {
-            [self.playerControlView showControl];
-        }
-//    }
+    if (self.playerStatusModel.playDidEnd) { return; }
+    if (self.playerControlView.isShowing) {
+        [self.playerControlView hideControl];
+    } else {
+        [self.playerControlView showControl];
+    }
+    //    }
 }
 
 /**
@@ -419,9 +419,9 @@ typedef NS_ENUM(NSInteger, PanDirection){
         }
     }
     if ([gestureRecognizer isKindOfClass:[UITapGestureRecognizer class]]) {
-//        if (self.isBottomVideo && !self.isFullScreen) {
-//            return NO;
-//        }
+        //        if (self.isBottomVideo && !self.isFullScreen) {
+        //            return NO;
+        //        }
     }
     if ([touch.view isKindOfClass:[UISlider class]]) {
         return NO;
@@ -525,6 +525,5 @@ typedef NS_ENUM(NSInteger, PanDirection){
 -(void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
-
 
 @end

@@ -1,14 +1,13 @@
 //
-//  LMVideoPlayerView.h
-//  IJK播放器Demo
+//  QQVideoPlayerView.h
+//  QQLive
 //
-//  Created by 李小南 on 2017/3/28.
-//  Copyright © 2017年 lamiantv. All rights reserved.
+//  Created by Mac on 2017/11/29.
+//  Copyright © 2017年 Mac. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import "LMPlayerControlView.h"
-
 @class QQPlayerStatusModel;
 
 @protocol QQVideoPlayerViewDelagate <NSObject>
@@ -26,7 +25,8 @@
 
 @end
 
-@interface LMVideoPlayerView : UIView
+@interface QQVideoPlayerView : UIView
+
 /** 视频控制层, 自定义层 */
 @property (nonatomic, strong, readonly) LMPlayerControlView *playerControlView;
 /** 未播放, 封面的View */
@@ -69,4 +69,5 @@
  *  重新播放
  */
 - (void)repeatPlay;
+
 @end

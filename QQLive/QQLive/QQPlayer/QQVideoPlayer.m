@@ -9,7 +9,7 @@
 #import "QQVideoPlayer.h"
 #import "QQPlayerManager.h"
 #import "QQPlayerStatusModel.h"
-#import "LMVideoPlayerView.h"
+#import "QQVideoPlayerView.h"
 #import "LMBrightnessView.h"
 
 @interface QQVideoPlayer ()<QQPlayerManagerDelegate, LMPlayerControlViewDelagate, LMPortraitControlViewDelegate, LMLandScapeControlViewDelegate, QQVideoPlayerViewDelagate, LMLoadingViewDelegate, LMCoverControlViewDelegate>
@@ -17,7 +17,7 @@
 // 代理
 @property (nonatomic, weak) id<QQVideoPlayerDelegate> delegate;
 // 最底层的父视图
-@property (nonatomic, strong) LMVideoPlayerView *videoPlayerView;
+@property (nonatomic, strong) QQVideoPlayerView *videoPlayerView;
 /** AVPlayer 管理 */
 @property (nonatomic, strong) QQPlayerManager *playerMgr;
 /** 播放数据模型 */
@@ -61,7 +61,7 @@
     [instance.playerStatusModel playerResetStatusModel];
     
     // !!!: 最底层视图创建
-    instance.videoPlayerView = [LMVideoPlayerView videoPlayerViewWithSuperView:view delegate:instance playerStatusModel:instance.playerStatusModel];
+    instance.videoPlayerView = [QQVideoPlayerView videoPlayerViewWithSuperView:view delegate:instance playerStatusModel:instance.playerStatusModel];
     instance.videoPlayerView.playerControlView.delegate = instance;
     instance.videoPlayerView.playerControlView.portraitControlView.delegate
     = instance;
@@ -443,7 +443,7 @@
     }];
 }
 
-#pragma mark - LMVideoPlayerViewDelagate
+#pragma mark - QQVideoPlayerViewDelagate
 /** 双击事件 */
 - (void)doubleTapAction {
     if (self.playerStatusModel.isPauseByUser) {
