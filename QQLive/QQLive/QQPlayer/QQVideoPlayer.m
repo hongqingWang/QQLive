@@ -12,7 +12,7 @@
 #import "QQVideoPlayerView.h"
 #import "LMBrightnessView.h"
 
-@interface QQVideoPlayer ()<QQPlayerManagerDelegate, LMPlayerControlViewDelagate, LMPortraitControlViewDelegate, LMLandScapeControlViewDelegate, QQVideoPlayerViewDelagate, QQLoadingViewDelegate, LMCoverControlViewDelegate>
+@interface QQVideoPlayer ()<QQPlayerManagerDelegate, LMPlayerControlViewDelagate, LMPortraitControlViewDelegate, LMLandScapeControlViewDelegate, QQVideoPlayerViewDelagate, QQLoadingViewDelegate, QQCoverControlViewDelegate>
 
 // 代理
 @property (nonatomic, weak) id<QQVideoPlayerDelegate> delegate;
@@ -525,7 +525,7 @@
     }
 }
 
-#pragma mark - LMCoverControlViewDelegate
+#pragma mark - QQCoverControlViewDelegate
 /** 返回按钮被点击 */
 - (void)coverControlViewBackButtonClick {
     if ([self.delegate respondsToSelector:@selector(playerBackButtonClick)]) {

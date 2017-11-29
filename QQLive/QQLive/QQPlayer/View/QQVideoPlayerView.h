@@ -30,7 +30,7 @@
 /** 视频控制层, 自定义层 */
 @property (nonatomic, strong, readonly) LMPlayerControlView *playerControlView;
 /** 未播放, 封面的View */
-@property (nonatomic, strong) LMCoverControlView *coverControlView;
+@property (nonatomic, strong) QQCoverControlView *coverControlView;
 /** 未播放, loading时的View */
 @property (nonatomic, strong) QQLoadingView *loadingView;
 

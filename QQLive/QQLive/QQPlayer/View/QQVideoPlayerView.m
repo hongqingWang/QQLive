@@ -507,9 +507,9 @@ typedef NS_ENUM(NSInteger, PanDirection){
     return _playerControlView;
 }
 
-- (LMCoverControlView *)coverControlView {
+- (QQCoverControlView *)coverControlView {
     if (!_coverControlView) {
-        _coverControlView = [[LMCoverControlView alloc] init];
+        _coverControlView = [[QQCoverControlView alloc] init];
     }
     return _coverControlView;
 }

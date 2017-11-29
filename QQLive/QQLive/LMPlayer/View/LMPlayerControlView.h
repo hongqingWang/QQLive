@@ -10,7 +10,7 @@
 #import "QQLoadingView.h"
 #import "LMPortraitControlView.h"
 #import "LMLandScapeControlView.h"
-#import "LMCoverControlView.h"
+#import "QQCoverControlView.h"
 @class QQPlayerStatusModel;
 
 @protocol LMPlayerControlViewDelagate <NSObject>

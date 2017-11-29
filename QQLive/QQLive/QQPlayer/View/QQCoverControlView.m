@@ -1,27 +1,29 @@
 //
-//  LMCoverView.m
-//  拉面视频Demo
+//  QQCoverControlView.m
+//  QQLive
 //
-//  Created by 李小南 on 16/9/26.
-//  Copyright © 2016年 lamiantv. All rights reserved.
-//  未播放状态下的封面
+//  Created by Mac on 2017/11/29.
+//  Copyright © 2017年 Mac. All rights reserved.
+//
 
-#import "LMCoverControlView.h"
+#import "QQCoverControlView.h"
 #import <Masonry.h>
 #import <UIImageView+WebCache.h>
 
-@interface LMCoverControlView ()
+@interface QQCoverControlView ()
+
 /** 背景图片 */
 @property (nonatomic, strong) UIImageView *backgroundImageView;
 /** 返回按钮 */
 @property (nonatomic, strong) UIButton *backBtn;
 /** 分享按钮 */
-@property (nonatomic, strong) UIButton *shareBtn; 
+@property (nonatomic, strong) UIButton *shareBtn;
 /** 播放Icon */
 @property (nonatomic, strong) UIImageView *playerImageView;
+
 @end
 
-@implementation LMCoverControlView
+@implementation QQCoverControlView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
@@ -80,7 +82,7 @@
 
 #pragma mark - 添加子控件约束
 - (void)makeSubViewsConstraints {
-
+    
     [self.backgroundImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.left.right.bottom.equalTo(self);
     }];

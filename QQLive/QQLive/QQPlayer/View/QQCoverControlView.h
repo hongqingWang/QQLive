@@ -1,14 +1,14 @@
 //
-//  LMCoverView.h
-//  拉面视频Demo
+//  QQCoverControlView.h
+//  QQLive
 //
-//  Created by 李小南 on 16/9/26.
-//  Copyright © 2016年 lamiantv. All rights reserved.
+//  Created by Mac on 2017/11/29.
+//  Copyright © 2017年 Mac. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@protocol LMCoverControlViewDelegate <NSObject>
+@protocol QQCoverControlViewDelegate <NSObject>
 
 /** 返回按钮被点击 */
 - (void)coverControlViewBackButtonClick;
@@ -16,10 +16,13 @@
 - (void)coverControlViewShareButtonClick;
 /** 封面图片Tap事件 */
 - (void)coverControlViewBackgroundImageViewTapAction;
+
 @end
 
-@interface LMCoverControlView : UIView
-@property (nonatomic, weak) id<LMCoverControlViewDelegate> delegate;
+@interface QQCoverControlView : UIView
+
+@property (nonatomic, weak) id<QQCoverControlViewDelegate> delegate;
 /** 更新封面图片 */
 - (void)syncCoverImageViewWithURLString:(NSString *)urlString placeholderImage:(UIImage *)placeholderImage;
+
 @end
