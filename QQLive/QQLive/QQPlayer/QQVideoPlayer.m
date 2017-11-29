@@ -12,7 +12,7 @@
 #import "QQVideoPlayerView.h"
 #import "LMBrightnessView.h"
 
-@interface QQVideoPlayer ()<QQPlayerManagerDelegate, LMPlayerControlViewDelagate, LMPortraitControlViewDelegate, LMLandScapeControlViewDelegate, QQVideoPlayerViewDelagate, QQLoadingViewDelegate, QQCoverControlViewDelegate>
+@interface QQVideoPlayer ()<QQPlayerManagerDelegate, LMPlayerControlViewDelagate, LMPortraitControlViewDelegate, QQLandScapeControlViewDelegate, QQVideoPlayerViewDelagate, QQLoadingViewDelegate, QQCoverControlViewDelegate>
 
 // 代理
 @property (nonatomic, weak) id<QQVideoPlayerDelegate> delegate;
@@ -360,7 +360,7 @@
     }];
 }
 
-#pragma mark - LMLandScapeControlViewDelegate
+#pragma mark - QQLandScapeControlViewDelegate
 /** 返回按钮被点击 */
 - (void)landScapeBackButtonClick {
     // 延迟隐藏控制层

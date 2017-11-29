@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "QQLoadingView.h"
 #import "LMPortraitControlView.h"
-#import "LMLandScapeControlView.h"
+#import "QQLandScapeControlView.h"
 #import "QQCoverControlView.h"
 @class QQPlayerStatusModel;
 
@@ -35,7 +35,7 @@
 /** 竖屏控制层的View */
 @property (nonatomic, strong) LMPortraitControlView *portraitControlView;
 /** 横屏控制层的View */
-@property (nonatomic, strong) LMLandScapeControlView *landScapeControlView;
+@property (nonatomic, strong) QQLandScapeControlView *landScapeControlView;
 /** 上次播放至xx秒(默认0) */
 @property (nonatomic, assign) NSInteger viewTime;
 

@@ -466,9 +466,9 @@ static const CGFloat LMPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
     return _portraitControlView;
 }
 
-- (LMLandScapeControlView *)landScapeControlView {
+- (QQLandScapeControlView *)landScapeControlView {
     if (!_landScapeControlView) {
-        _landScapeControlView = [[LMLandScapeControlView alloc] init];
+        _landScapeControlView = [[QQLandScapeControlView alloc] init];
     }
     return _landScapeControlView;
 }

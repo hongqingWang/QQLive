@@ -1,14 +1,14 @@
 //
-//  LMLandScapeControlView.h
-//  拉面视频Demo
+//  QQLandScapeControlView.h
+//  QQLive
 //
-//  Created by 李小南 on 16/9/1.
-//  Copyright © 2016年 lamiantv. All rights reserved.
-//  横屏下的控制的view
+//  Created by Mac on 2017/11/29.
+//  Copyright © 2017年 Mac. All rights reserved.
+//
 
 #import <UIKit/UIKit.h>
 
-@protocol LMLandScapeControlViewDelegate <NSObject>
+@protocol QQLandScapeControlViewDelegate <NSObject>
 
 /** 返回按钮被点击 */
 - (void)landScapeBackButtonClick;
@@ -26,10 +26,12 @@
 - (void)landScapeExitFullScreenButtonClick;
 /** 进度条tap点击 */
 - (void)landScapeProgressSliderTapAction:(CGFloat)value;
+
 @end
 
-@interface LMLandScapeControlView : UIView
-@property (nonatomic, weak) id<LMLandScapeControlViewDelegate> delegate;
+@interface QQLandScapeControlView : UIView
+
+@property (nonatomic, weak) id <QQLandScapeControlViewDelegate> delegate;
 
 /** 重置ControlView */
 - (void)playerResetControlView;
@@ -57,4 +59,5 @@
 
 /** 更新视频时长 */
 - (void)syncDurationTime:(NSInteger)time;
+
 @end

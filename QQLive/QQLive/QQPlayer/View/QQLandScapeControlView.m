@@ -1,16 +1,16 @@
 //
-//  LMLandScapeControlView.m
-//  拉面视频Demo
+//  QQLandScapeControlView.m
+//  QQLive
 //
-//  Created by 李小南 on 16/9/1.
-//  Copyright © 2016年 lamiantv. All rights reserved.
-//  
+//  Created by Mac on 2017/11/29.
+//  Copyright © 2017年 Mac. All rights reserved.
+//
 
-#import "LMLandScapeControlView.h"
+#import "QQLandScapeControlView.h"
 #import <Masonry.h>
 #import "UIColor+Hex.h"
 
-@interface LMLandScapeControlView ()
+@interface QQLandScapeControlView ()
 /** 顶部工具栏 */
 @property (nonatomic, strong) UIView *topToolView;
 /** 返回按钮 */
@@ -42,9 +42,11 @@
 @property (nonatomic, strong) UIView *statusBackgrundViewView;
 
 @property (nonatomic, assign) double durationTime;
+
 @end
 
-@implementation LMLandScapeControlView
+@implementation QQLandScapeControlView
+
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         // 添加子控件
@@ -169,7 +171,7 @@
     [self.backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.offset(36);
         make.height.offset(34);
-//        make.top.equalTo(self.mas_top).offset(9 + 20);
+        //        make.top.equalTo(self.mas_top).offset(9 + 20);
         make.centerY.equalTo(self.topToolView.mas_centerY);
         make.left.equalTo(self.mas_left).offset(5);
     }];
@@ -234,7 +236,7 @@
         make.centerY.equalTo(self.playOrPauseSmallBtn.mas_centerY).offset(-1);
         make.height.mas_equalTo(30);
     }];
-
+    
     // 播放或暂停按钮(大)
     [self.playOrPauseBigBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.height.mas_equalTo(75);
@@ -470,4 +472,5 @@
     }
     return _statusBackgrundViewView;
 }
+
 @end
