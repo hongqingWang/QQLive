@@ -52,7 +52,7 @@
         self.backImage = ({
             UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 79, 76)];
             // imgView的image是亮度的那张图片.....
-            imgView.image        = [UIImage imageNamed:@"ZFPlayer_brightness"];
+            imgView.image        = [UIImage imageNamed:@"qq_player_brightness"];
             [self addSubview:imgView];
             imgView;
         });

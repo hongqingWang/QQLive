@@ -536,9 +536,11 @@ static const CGFloat QQPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
 }
 
 - (UIButton *)repeatBtn {
+    
     if (!_repeatBtn) {
+        
         _repeatBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_repeatBtn setImage:[UIImage imageNamed:@"ZFPlayer_repeat_video"] forState:UIControlStateNormal];
+        [_repeatBtn setImage:[UIImage imageNamed:@"qq_player_repeat"] forState:UIControlStateNormal];
     }
     return _repeatBtn;
 }

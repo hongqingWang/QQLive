@@ -267,11 +267,13 @@
     return timeString;
 }
 
-#pragma mark - getter
+#pragma mark - Getters and Setters
 - (UIButton *)backBtn {
+    
     if (!_backBtn) {
+        
         _backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_backBtn setImage:[UIImage imageNamed:@"btn_播放页_返回"] forState:UIControlStateNormal];
+        [_backBtn setImage:[UIImage imageNamed:@"qq_player_back"] forState:UIControlStateNormal];
     }
     return _backBtn;
 }
@@ -279,7 +281,7 @@
 - (UIButton *)shareBtn {
     if (!_shareBtn) {
         _shareBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_shareBtn setImage:[UIImage imageNamed:@"btn_播放页_分享"] forState:UIControlStateNormal];
+        [_shareBtn setImage:[UIImage imageNamed:@"qq_player_share"] forState:UIControlStateNormal];
     }
     return _shareBtn;
 }
@@ -295,8 +297,8 @@
 - (UIButton *)playOrPauseBtn {
     if (!_playOrPauseBtn) {
         _playOrPauseBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_playOrPauseBtn setImage:[UIImage imageNamed:@"btn_播放"] forState:UIControlStateNormal];
-        [_playOrPauseBtn setImage:[UIImage imageNamed:@"btn_暂停"] forState:UIControlStateSelected];
+        [_playOrPauseBtn setImage:[UIImage imageNamed:@"qq_player_play"] forState:UIControlStateNormal];
+        [_playOrPauseBtn setImage:[UIImage imageNamed:@"qq_player_pause"] forState:UIControlStateSelected];
     }
     return _playOrPauseBtn;
 }
@@ -345,9 +347,11 @@
 }
 
 - (UIButton *)fullScreenBtn {
+    
     if (!_fullScreenBtn) {
+        
         _fullScreenBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_fullScreenBtn setImage:[UIImage imageNamed:@"btn_全屏"] forState:UIControlStateNormal];
+        [_fullScreenBtn setImage:[UIImage imageNamed:@"qq_player_full_screen"] forState:UIControlStateNormal];
     }
     return _fullScreenBtn;
 }

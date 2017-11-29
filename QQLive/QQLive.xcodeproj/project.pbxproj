@@ -41,6 +41,7 @@
 		04DADE5E1FCE9B9400B72AD5 /* QQPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DADE5D1FCE9B9400B72AD5 /* QQPlayerControlView.m */; };
 		04DADE611FCE9CD900B72AD5 /* QQBrightnessView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DADE601FCE9CD900B72AD5 /* QQBrightnessView.m */; };
 		04DADE641FCE9E1500B72AD5 /* QQMaterialDesignSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DADE631FCE9E1500B72AD5 /* QQMaterialDesignSpinner.m */; };
+		04DADE681FCEA01100B72AD5 /* QQPlayer.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DADE671FCEA01100B72AD5 /* QQPlayer.xcassets */; };
 		05A917B65D6707E6755C79A3 /* libPods-QQLive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A83C2B1E70D4F1EAB674CB /* libPods-QQLive.a */; };
 /* End PBXBuildFile section */
 
@@ -119,6 +120,7 @@
 		04DADE601FCE9CD900B72AD5 /* QQBrightnessView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQBrightnessView.m; sourceTree = "<group>"; };
 		04DADE621FCE9E1500B72AD5 /* QQMaterialDesignSpinner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQMaterialDesignSpinner.h; sourceTree = "<group>"; };
 		04DADE631FCE9E1500B72AD5 /* QQMaterialDesignSpinner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQMaterialDesignSpinner.m; sourceTree = "<group>"; };
+		04DADE671FCEA01100B72AD5 /* QQPlayer.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = QQPlayer.xcassets; sourceTree = "<group>"; };
 		86A83C2B1E70D4F1EAB674CB /* libPods-QQLive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QQLive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A98C5534DCB19713F47B9851 /* Pods-QQLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QQLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-QQLive/Pods-QQLive.release.xcconfig"; sourceTree = "<group>"; };
 		F737E6EF8C8376D7E1988AFB /* Pods-QQLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QQLive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QQLive/Pods-QQLive.debug.xcconfig"; sourceTree = "<group>"; };
@@ -376,6 +378,7 @@
 				04DADE3A1FCE604D00B72AD5 /* Manager */,
 				04DADE3B1FCE604D00B72AD5 /* Model */,
 				04DADE3C1FCE604D00B72AD5 /* View */,
+				04DADE671FCEA01100B72AD5 /* QQPlayer.xcassets */,
 			);
 			path = QQPlayer;
 			sourceTree = "<group>";
@@ -517,6 +520,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DADE681FCEA01100B72AD5 /* QQPlayer.xcassets in Resources */,
 				04431B9B1FCCFED20099580A /* LaunchScreen.storyboard in Resources */,
 				04431B981FCCFED20099580A /* Assets.xcassets in Resources */,
 				04431B961FCCFED20099580A /* Main.storyboard in Resources */,

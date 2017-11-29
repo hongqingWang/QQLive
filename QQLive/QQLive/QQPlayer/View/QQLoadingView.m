@@ -94,9 +94,11 @@
 
 #pragma mark - getter
 - (UIButton *)backBtn {
+    
     if (!_backBtn) {
+        
         _backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_backBtn setImage:[UIImage imageNamed:@"btn_播放页_返回"] forState:UIControlStateNormal];
+        [_backBtn setImage:[UIImage imageNamed:@"qq_player_back"] forState:UIControlStateNormal];
     }
     return _backBtn;
 }
@@ -104,7 +106,7 @@
 - (UIButton *)shareBtn {
     if (!_shareBtn) {
         _shareBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_shareBtn setImage:[UIImage imageNamed:@"btn_播放页_分享"] forState:UIControlStateNormal];
+        [_shareBtn setImage:[UIImage imageNamed:@"qq_player_share"] forState:UIControlStateNormal];
     }
     return _shareBtn;
 }
