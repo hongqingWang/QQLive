@@ -7,19 +7,19 @@
 //
 
 #import "QQVideoPlayer.h"
-#import "LMPlayerManager.h"
+#import "QQPlayerManager.h"
 #import "LMVideoPlayerView.h"
 #import "LMPlayerStatusModel.h"
 #import "LMBrightnessView.h"
 
-@interface QQVideoPlayer ()<LMPlayerManagerDelegate, LMPlayerControlViewDelagate, LMPortraitControlViewDelegate, LMLandScapeControlViewDelegate, LMVideoPlayerViewDelagate, LMLoadingViewDelegate, LMCoverControlViewDelegate>
+@interface QQVideoPlayer ()<QQPlayerManagerDelegate, LMPlayerControlViewDelagate, LMPortraitControlViewDelegate, LMLandScapeControlViewDelegate, LMVideoPlayerViewDelagate, LMLoadingViewDelegate, LMCoverControlViewDelegate>
 
 // 代理
 @property (nonatomic, weak) id<QQVideoPlayerDelegate> delegate;
 // 最底层的父视图
 @property (nonatomic, strong) LMVideoPlayerView *videoPlayerView;
-// AVPlayer 管理
-@property (nonatomic, strong) LMPlayerManager *playerMgr;
+/** AVPlayer 管理 */
+@property (nonatomic, strong) QQPlayerManager *playerMgr;
 // 播放数据模型
 @property (nonatomic, strong) LMPlayerModel *playerModel;
 /** 播放器的参数模型 */
@@ -74,7 +74,7 @@
     
     
     // !!!: 创建AVPlayer管理
-    instance.playerMgr = [LMPlayerManager playerManagerWithDelegate:instance playerStatusModel:instance.playerStatusModel];
+    instance.playerMgr = [QQPlayerManager playerManagerWithDelegate:instance playerStatusModel:instance.playerStatusModel];
     instance.isPauseByUser = YES;
     
     // 设置基本模型 (最后设置)
@@ -238,7 +238,8 @@
     [self.videoPlayerView.playerControlView.landScapeControlView syncDurationTime:self.playerMgr.duration];
 }
 
-- (void)didBuffer:(LMPlayerManager *)playerMgr {
+- (void)didBuffer:(QQPlayerManager *)playerMgr {
+    
     if (self.playerMgr.state == LMPlayerStateBuffering || !self.playerStatusModel.isPauseByUser) {
         [self.playerMgr play];
         //        [self.videoPlayerView.playerControlView readyToPlay];

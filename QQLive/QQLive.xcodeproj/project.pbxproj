@@ -38,7 +38,6 @@
 		04431C1C1FCD77C70099580A /* LMLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04431C0C1FCD77C70099580A /* LMLoadingView.m */; };
 		04431C1D1FCD77C70099580A /* MMMaterialDesignSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 04431C0E1FCD77C70099580A /* MMMaterialDesignSpinner.m */; };
 		04431C1E1FCD77C70099580A /* LMPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04431C101FCD77C70099580A /* LMPlayerControlView.m */; };
-		04431C201FCD77C70099580A /* LMPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04431C141FCD77C70099580A /* LMPlayerManager.m */; };
 		04431C241FCD78100099580A /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 04431C221FCD78100099580A /* UIColor+Hex.m */; };
 		04DADE401FCE673E00B72AD5 /* QQVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DADE3F1FCE673E00B72AD5 /* QQVideoPlayer.m */; };
 		04DADE461FCE857100B72AD5 /* QQPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DADE451FCE857100B72AD5 /* QQPlayerManager.m */; };
@@ -113,8 +112,6 @@
 		04431C0E1FCD77C70099580A /* MMMaterialDesignSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMaterialDesignSpinner.m; sourceTree = "<group>"; };
 		04431C0F1FCD77C70099580A /* LMBrightnessView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMBrightnessView.h; sourceTree = "<group>"; };
 		04431C101FCD77C70099580A /* LMPlayerControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMPlayerControlView.m; sourceTree = "<group>"; };
-		04431C131FCD77C70099580A /* LMPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMPlayerManager.h; sourceTree = "<group>"; };
-		04431C141FCD77C70099580A /* LMPlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMPlayerManager.m; sourceTree = "<group>"; };
 		04431C221FCD78100099580A /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		04431C231FCD78100099580A /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		04DADE3D1FCE64A400B72AD5 /* QQPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQPlayer.h; sourceTree = "<group>"; };
@@ -409,8 +406,6 @@
 		04431C121FCD77C70099580A /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				04431C131FCD77C70099580A /* LMPlayerManager.h */,
-				04431C141FCD77C70099580A /* LMPlayerManager.m */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -635,7 +630,6 @@
 				04431C241FCD78100099580A /* UIColor+Hex.m in Sources */,
 				04431BE21FCD0E390099580A /* QQLiveController.m in Sources */,
 				04431C171FCD77C70099580A /* LMLandScapeControlView.m in Sources */,
-				04431C201FCD77C70099580A /* LMPlayerManager.m in Sources */,
 				04431C1B1FCD77C70099580A /* LMCoverControlView.m in Sources */,
 				04431C181FCD77C70099580A /* LMPortraitControlView.m in Sources */,
 				04431BD71FCD0D9B0099580A /* QQLive.m in Sources */,
