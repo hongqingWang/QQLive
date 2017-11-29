@@ -9,7 +9,7 @@
 //#define QQ_PLAYER_SCREEN_WIDTH                      [[UIScreen mainScreen] bounds].size.width
 //#define QQ_PLAYER_SCREEN_HEIGHT                     [[UIScreen mainScreen] bounds].size.height
 
-#import "LMVideoPlayer.h"
+#import "QQVideoPlayer.h"
 #import "LMPlayerModel.h"
 #import "LMPlayerStatusModel.h"
 #import "LMBrightnessView.h"

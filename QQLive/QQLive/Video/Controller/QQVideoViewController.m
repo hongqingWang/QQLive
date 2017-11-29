@@ -18,10 +18,10 @@
 
 #define QQ_PLAY_VIDEO_CELL_HEIGHT               200
 
-@interface QQVideoViewController ()<UITableViewDataSource, LMVideoPlayerDelegate>
+@interface QQVideoViewController ()<UITableViewDataSource, QQVideoPlayerDelegate>
 /** 状态栏的背景 */
 @property (nonatomic, strong) UIView *topView;
-@property (nonatomic, strong) LMVideoPlayer *player;
+@property (nonatomic, strong) QQVideoPlayer *player;
 @property (nonatomic, strong) UIView *playerFatherView;
 @property (nonatomic, strong) LMPlayerModel *playerModel;
 
@@ -129,7 +129,7 @@
     model.seekTime = 20;
     model.viewTime = 200;
     
-    LMVideoPlayer *player = [LMVideoPlayer videoPlayerWithView:self.playerFatherView delegate:self playerModel:model];
+    QQVideoPlayer *player = [QQVideoPlayer videoPlayerWithView:self.playerFatherView delegate:self playerModel:model];
     self.player = player;
 }
 
