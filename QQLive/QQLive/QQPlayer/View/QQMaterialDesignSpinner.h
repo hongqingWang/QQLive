@@ -1,25 +1,26 @@
 //
-//  MMMaterialDesignSpinner.h
-//  Pods
+//  QQMaterialDesignSpinner.h
+//  QQLive
 //
-//  Created by Michael Maxwell on 12/28/14.
-//
+//  Created by Mac on 2017/11/29.
+//  Copyright © 2017年 Mac. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-//! Project version number for MMMaterialDesignSpinner.
-FOUNDATION_EXPORT double MMMaterialDesignSpinnerVersionNumber;
+//! Project version number for QQMaterialDesignSpinner.
+FOUNDATION_EXPORT double QQMaterialDesignSpinnerVersionNumber;
 
-//! Project version string for MMMaterialDesignSpinner.
-FOUNDATION_EXPORT const unsigned char MMMaterialDesignSpinnerVersionString[];
+//! Project version string for QQMaterialDesignSpinner.
+FOUNDATION_EXPORT const unsigned char QQMaterialDesignSpinnerVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Cent/PublicHeader.h>
 
 /**
  *  A control similar to iOS' UIActivityIndicatorView modeled after Google's Material Design Activity spinner.
  */
-@interface MMMaterialDesignSpinner : UIView
+
+@interface QQMaterialDesignSpinner : UIView
 
 /** Sets the line width of the spinner's circle. */
 @property (nonatomic) CGFloat lineWidth;
@@ -41,7 +42,7 @@ FOUNDATION_EXPORT const unsigned char MMMaterialDesignSpinnerVersionString[];
  *  method calls.
  *
  *  @param animate true to start animating, false to stop animating.
-    @note This method simply calls the startAnimating or stopAnimating methods based on the value of the animate parameter.
+ @note This method simply calls the startAnimating or stopAnimating methods based on the value of the animate parameter.
  */
 - (void)setAnimating:(BOOL)animate;
 

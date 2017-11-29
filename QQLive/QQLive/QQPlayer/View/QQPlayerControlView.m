@@ -8,7 +8,7 @@
 
 #import "QQPlayerControlView.h"
 #import "QQPlayerStatusModel.h"
-#import "MMMaterialDesignSpinner.h"
+#import "QQMaterialDesignSpinner.h"
 #import <Masonry.h>
 #import "UIColor+Hex.h"
 
@@ -18,7 +18,7 @@ static const CGFloat QQPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
 @interface QQPlayerControlView ()
 
 /** 加载loading */
-@property (nonatomic, strong) MMMaterialDesignSpinner *activity;
+@property (nonatomic, strong) QQMaterialDesignSpinner *activity;
 /** 快进快退View */
 @property (nonatomic, strong) UIView                  *fastView;
 /** 快进快退进度progress */
@@ -476,9 +476,9 @@ static const CGFloat QQPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
     return _landScapeControlView;
 }
 
-- (MMMaterialDesignSpinner *)activity {
+- (QQMaterialDesignSpinner *)activity {
     if (!_activity) {
-        _activity = [[MMMaterialDesignSpinner alloc] init];
+        _activity = [[QQMaterialDesignSpinner alloc] init];
         _activity.lineWidth = 1;
         _activity.duration  = 1;
         _activity.tintColor = [[UIColor whiteColor] colorWithAlphaComponent:0.9];

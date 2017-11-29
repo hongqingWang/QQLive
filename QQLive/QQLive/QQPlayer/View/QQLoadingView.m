@@ -8,14 +8,14 @@
 
 #import "QQLoadingView.h"
 #import <Masonry.h>
-#import "MMMaterialDesignSpinner.h"
+#import "QQMaterialDesignSpinner.h"
 
 @interface QQLoadingView ()
 /** 返回按钮 */
 @property (nonatomic, strong) UIButton *backBtn;
 /** 分享按钮 */
 @property (nonatomic, strong) UIButton *shareBtn;
-@property (nonatomic, strong) MMMaterialDesignSpinner *activity;
+@property (nonatomic, strong) QQMaterialDesignSpinner *activity;
 @end
 
 @implementation QQLoadingView
@@ -109,9 +109,9 @@
     return _shareBtn;
 }
 
-- (MMMaterialDesignSpinner *)activity {
+- (QQMaterialDesignSpinner *)activity {
     if (!_activity) {
-        _activity = [[MMMaterialDesignSpinner alloc] init];
+        _activity = [[QQMaterialDesignSpinner alloc] init];
         _activity.lineWidth = 1;
         _activity.duration  = 1;
         _activity.tintColor = [[UIColor whiteColor] colorWithAlphaComponent:0.9];

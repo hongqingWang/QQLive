@@ -1,22 +1,24 @@
 //
-//  MMMaterialDesignSpinner.m
-//  Pods
+//  QQMaterialDesignSpinner.m
+//  QQLive
 //
-//  Created by Michael Maxwell on 12/28/14.
-//
+//  Created by Mac on 2017/11/29.
+//  Copyright © 2017年 Mac. All rights reserved.
 //
 
-#import "MMMaterialDesignSpinner.h"
+#import "QQMaterialDesignSpinner.h"
 
-static NSString *kMMRingStrokeAnimationKey = @"mmmaterialdesignspinner.stroke";
-static NSString *kMMRingRotationAnimationKey = @"mmmaterialdesignspinner.rotation";
+static NSString *kQQRingStrokeAnimationKey = @"qqmaterialdesignspinner.stroke";
+static NSString *kQQRingRotationAnimationKey = @"qqmaterialdesignspinner.rotation";
 
-@interface MMMaterialDesignSpinner ()
+@interface QQMaterialDesignSpinner ()
+
 @property (nonatomic, readonly) CAShapeLayer *progressLayer;
 @property (nonatomic, readwrite) BOOL isAnimating;
+
 @end
 
-@implementation MMMaterialDesignSpinner
+@implementation QQMaterialDesignSpinner
 
 @synthesize progressLayer=_progressLayer;
 
@@ -93,7 +95,7 @@ static NSString *kMMRingRotationAnimationKey = @"mmmaterialdesignspinner.rotatio
     animation.toValue = @(2 * M_PI);
     animation.repeatCount = INFINITY;
     animation.removedOnCompletion = NO;
-    [self.progressLayer addAnimation:animation forKey:kMMRingRotationAnimationKey];
+    [self.progressLayer addAnimation:animation forKey:kQQRingRotationAnimationKey];
     
     CABasicAnimation *headAnimation = [CABasicAnimation animation];
     headAnimation.keyPath = @"strokeStart";
@@ -131,7 +133,7 @@ static NSString *kMMRingRotationAnimationKey = @"mmmaterialdesignspinner.rotatio
     [animations setAnimations:@[headAnimation, tailAnimation, endHeadAnimation, endTailAnimation]];
     animations.repeatCount = INFINITY;
     animations.removedOnCompletion = NO;
-    [self.progressLayer addAnimation:animations forKey:kMMRingStrokeAnimationKey];
+    [self.progressLayer addAnimation:animations forKey:kQQRingStrokeAnimationKey];
     
     
     self.isAnimating = true;
@@ -145,8 +147,8 @@ static NSString *kMMRingRotationAnimationKey = @"mmmaterialdesignspinner.rotatio
     if (!self.isAnimating)
         return;
     
-    [self.progressLayer removeAnimationForKey:kMMRingRotationAnimationKey];
-    [self.progressLayer removeAnimationForKey:kMMRingStrokeAnimationKey];
+    [self.progressLayer removeAnimationForKey:kQQRingRotationAnimationKey];
+    [self.progressLayer removeAnimationForKey:kQQRingStrokeAnimationKey];
     self.isAnimating = false;
     
     if (self.hidesWhenStopped) {
