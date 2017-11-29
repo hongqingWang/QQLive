@@ -23,7 +23,7 @@
 @property (nonatomic, strong) UIView *topView;
 @property (nonatomic, strong) QQVideoPlayer *player;
 @property (nonatomic, strong) UIView *playerFatherView;
-@property (nonatomic, strong) LMPlayerModel *playerModel;
+@property (nonatomic, strong) QQPlayerModel *playerModel;
 
 /** 离开页面时候是否在播放 */
 @property (nonatomic, assign) BOOL isPlaying;
@@ -123,7 +123,7 @@
 //    [self.view addSubview:self.tableView];
     [self makePlayViewConstraints];
     
-    LMPlayerModel *model = [[LMPlayerModel alloc] init];
+    QQPlayerModel *model = [[QQPlayerModel alloc] init];
     //    model.videoURL = [NSURL URLWithString:@"http://img.zzf.sos-life.com//o_1bs56d5m31htgt3tsl51hqv2ma9.mp4"];
     model.videoURL = [NSURL URLWithString:@"http://img.zzf.sos-life.com//o_1bs05aspf15b75b01rtmjsi11om9.mp4"];
     model.seekTime = 20;
@@ -134,8 +134,10 @@
 }
 
 - (void)nextVideoBtnClick {
+    
     if (self.isStartPlay) {
-        LMPlayerModel *model = [[LMPlayerModel alloc] init];
+        
+        QQPlayerModel *model = [[QQPlayerModel alloc] init];
         model.videoURL = [NSURL URLWithString:@"http://img.zzf.sos-life.com//o_1bs56d5m31htgt3tsl51hqv2ma9.mp4"];
         [self.player resetToPlayNewVideo:model];
     }
@@ -221,9 +223,9 @@
     return _playerFatherView;
 }
 
-- (LMPlayerModel *)playerModel {
+- (QQPlayerModel *)playerModel {
     if (!_playerModel) {
-        _playerModel = [[LMPlayerModel alloc] init];
+        _playerModel = [[QQPlayerModel alloc] init];
     }
     return _playerModel;
 }

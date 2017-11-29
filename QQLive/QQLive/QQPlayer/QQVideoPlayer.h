@@ -7,8 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-//#import <UIKit/UIKit.h>
-#import "LMPlayerModel.h"
+#import "QQPlayerModel.h"
 @class QQVideoPlayer;
 
 @protocol QQVideoPlayerDelegate <NSObject>
@@ -41,13 +40,12 @@
  */
 + (instancetype)videoPlayerWithView:(UIView *)view
                            delegate:(id<QQVideoPlayerDelegate>)delegate
-                        playerModel:(LMPlayerModel *)playerModel;
+                        playerModel:(QQPlayerModel *)playerModel;
 
 /**
  *  在当前页面，设置新的视频时候调用此方法
  */
-- (void)resetToPlayNewVideo:(LMPlayerModel *)playerModel;
-
+- (void)resetToPlayNewVideo:(QQPlayerModel *)playerModel;
 
 /** 自动播放，默认不自动播放 */
 - (void)autoPlayTheVideo;

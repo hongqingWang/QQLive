@@ -1,14 +1,14 @@
 //
-//  LMPlayerModel.m
-//  lamiantv
+//  QQPlayerModel.m
+//  QQLive
 //
-//  Created by 李小南 on 2016/12/2.
-//  Copyright © 2016年 AiPai. All rights reserved.
+//  Created by Mac on 2017/11/29.
+//  Copyright © 2017年 Mac. All rights reserved.
 //
 
-#import "LMPlayerModel.h"
+#import "QQPlayerModel.h"
 
-@implementation LMPlayerModel
+@implementation QQPlayerModel
 
 - (UIImage *)placeholderImage
 {
@@ -33,4 +33,5 @@
     
     return image;
 }
+
 @end

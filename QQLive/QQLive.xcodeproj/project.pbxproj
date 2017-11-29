@@ -29,7 +29,6 @@
 		04431BEF1FCD53020099580A /* QQVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04431BEE1FCD53020099580A /* QQVideoCell.m */; };
 		04431BF31FCD5B800099580A /* UIView+QQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 04431BF21FCD5B800099580A /* UIView+QQ.m */; };
 		04431C151FCD77C70099580A /* LMPlayerStatusModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04431BFC1FCD77C70099580A /* LMPlayerStatusModel.m */; };
-		04431C161FCD77C70099580A /* LMPlayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04431BFD1FCD77C70099580A /* LMPlayerModel.m */; };
 		04431C171FCD77C70099580A /* LMLandScapeControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04431C041FCD77C70099580A /* LMLandScapeControlView.m */; };
 		04431C181FCD77C70099580A /* LMPortraitControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04431C051FCD77C70099580A /* LMPortraitControlView.m */; };
 		04431C191FCD77C70099580A /* LMBrightnessView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04431C081FCD77C70099580A /* LMBrightnessView.m */; };
@@ -41,6 +40,7 @@
 		04431C241FCD78100099580A /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 04431C221FCD78100099580A /* UIColor+Hex.m */; };
 		04DADE401FCE673E00B72AD5 /* QQVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DADE3F1FCE673E00B72AD5 /* QQVideoPlayer.m */; };
 		04DADE461FCE857100B72AD5 /* QQPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DADE451FCE857100B72AD5 /* QQPlayerManager.m */; };
+		04DADE491FCE8CB900B72AD5 /* QQPlayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DADE481FCE8CB900B72AD5 /* QQPlayerModel.m */; };
 		05A917B65D6707E6755C79A3 /* libPods-QQLive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A83C2B1E70D4F1EAB674CB /* libPods-QQLive.a */; };
 /* End PBXBuildFile section */
 
@@ -93,9 +93,7 @@
 		04431BF11FCD5B800099580A /* UIView+QQ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+QQ.h"; sourceTree = "<group>"; };
 		04431BF21FCD5B800099580A /* UIView+QQ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+QQ.m"; sourceTree = "<group>"; };
 		04431BFC1FCD77C70099580A /* LMPlayerStatusModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMPlayerStatusModel.m; sourceTree = "<group>"; };
-		04431BFD1FCD77C70099580A /* LMPlayerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMPlayerModel.m; sourceTree = "<group>"; };
 		04431BFE1FCD77C70099580A /* LMPlayerStatusModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMPlayerStatusModel.h; sourceTree = "<group>"; };
-		04431BFF1FCD77C70099580A /* LMPlayerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMPlayerModel.h; sourceTree = "<group>"; };
 		04431C011FCD77C70099580A /* LMVideoPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMVideoPlayerView.h; sourceTree = "<group>"; };
 		04431C021FCD77C70099580A /* LMLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLoadingView.h; sourceTree = "<group>"; };
 		04431C031FCD77C70099580A /* LMCoverControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMCoverControlView.h; sourceTree = "<group>"; };
@@ -119,6 +117,8 @@
 		04DADE3F1FCE673E00B72AD5 /* QQVideoPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQVideoPlayer.m; sourceTree = "<group>"; };
 		04DADE441FCE857100B72AD5 /* QQPlayerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQPlayerManager.h; sourceTree = "<group>"; };
 		04DADE451FCE857100B72AD5 /* QQPlayerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQPlayerManager.m; sourceTree = "<group>"; };
+		04DADE471FCE8CB900B72AD5 /* QQPlayerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQPlayerModel.h; sourceTree = "<group>"; };
+		04DADE481FCE8CB900B72AD5 /* QQPlayerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQPlayerModel.m; sourceTree = "<group>"; };
 		86A83C2B1E70D4F1EAB674CB /* libPods-QQLive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QQLive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A98C5534DCB19713F47B9851 /* Pods-QQLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QQLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-QQLive/Pods-QQLive.release.xcconfig"; sourceTree = "<group>"; };
 		F737E6EF8C8376D7E1988AFB /* Pods-QQLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QQLive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QQLive/Pods-QQLive.debug.xcconfig"; sourceTree = "<group>"; };
@@ -364,7 +364,6 @@
 			children = (
 				04431BFB1FCD77C70099580A /* Model */,
 				04431C001FCD77C70099580A /* View */,
-				04431C121FCD77C70099580A /* Utility */,
 			);
 			path = LMPlayer;
 			sourceTree = "<group>";
@@ -374,8 +373,6 @@
 			children = (
 				04431BFE1FCD77C70099580A /* LMPlayerStatusModel.h */,
 				04431BFC1FCD77C70099580A /* LMPlayerStatusModel.m */,
-				04431BFF1FCD77C70099580A /* LMPlayerModel.h */,
-				04431BFD1FCD77C70099580A /* LMPlayerModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -401,13 +398,6 @@
 				04431C081FCD77C70099580A /* LMBrightnessView.m */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		04431C121FCD77C70099580A /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utility;
 			sourceTree = "<group>";
 		};
 		04431C211FCD77FD0099580A /* Color */ = {
@@ -444,6 +434,8 @@
 		04DADE3B1FCE604D00B72AD5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				04DADE471FCE8CB900B72AD5 /* QQPlayerModel.h */,
+				04DADE481FCE8CB900B72AD5 /* QQPlayerModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -615,7 +607,6 @@
 			files = (
 				04431C1D1FCD77C70099580A /* MMMaterialDesignSpinner.m in Sources */,
 				04431BEF1FCD53020099580A /* QQVideoCell.m in Sources */,
-				04431C161FCD77C70099580A /* LMPlayerModel.m in Sources */,
 				04431C1A1FCD77C70099580A /* LMVideoPlayerView.m in Sources */,
 				04431BA91FCCFF2E0099580A /* main.m in Sources */,
 				04431BEC1FCD135C0099580A /* QQVideo.m in Sources */,
@@ -623,6 +614,7 @@
 				04431C151FCD77C70099580A /* LMPlayerStatusModel.m in Sources */,
 				04DADE401FCE673E00B72AD5 /* QQVideoPlayer.m in Sources */,
 				04431BB11FCCFF500099580A /* QQHomeViewController.m in Sources */,
+				04DADE491FCE8CB900B72AD5 /* QQPlayerModel.m in Sources */,
 				04431BB41FCD05960099580A /* QQHomeCell.m in Sources */,
 				04431BE91FCD13500099580A /* QQVideoViewController.m in Sources */,
 				04431C1C1FCD77C70099580A /* LMLoadingView.m in Sources */,

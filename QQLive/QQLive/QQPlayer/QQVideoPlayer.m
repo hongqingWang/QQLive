@@ -20,8 +20,8 @@
 @property (nonatomic, strong) LMVideoPlayerView *videoPlayerView;
 /** AVPlayer 管理 */
 @property (nonatomic, strong) QQPlayerManager *playerMgr;
-// 播放数据模型
-@property (nonatomic, strong) LMPlayerModel *playerModel;
+/** 播放数据模型 */
+@property (nonatomic, strong) QQPlayerModel *playerModel;
 /** 播放器的参数模型 */
 @property (nonatomic, strong) LMPlayerStatusModel *playerStatusModel;
 
@@ -47,7 +47,7 @@
 
 #pragma mark - public method
 
-+ (instancetype)videoPlayerWithView:(UIView *)view delegate:(id<QQVideoPlayerDelegate>)delegate playerModel:(LMPlayerModel *)playerModel {
++ (instancetype)videoPlayerWithView:(UIView *)view delegate:(id <QQVideoPlayerDelegate>)delegate playerModel:(QQPlayerModel *)playerModel {
     
     if (view == nil) {
         return nil;
@@ -98,7 +98,7 @@
     return self;
 }
 
-- (void)setPlayerModel:(LMPlayerModel *)playerModel {
+- (void)setPlayerModel:(QQPlayerModel *)playerModel {
     _playerModel = playerModel;
     
     // 同步一些属性
@@ -150,7 +150,8 @@
 /**
  *  在当前页面，设置新的视频时候调用此方法
  */
-- (void)resetToPlayNewVideo:(LMPlayerModel *)playerModel {
+- (void)resetToPlayNewVideo:(QQPlayerModel *)playerModel {
+    
     [self resetPlayer];
     self.playerModel = playerModel;
     [self configLMPlayer];
