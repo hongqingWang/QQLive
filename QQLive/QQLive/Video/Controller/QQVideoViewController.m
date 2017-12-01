@@ -97,10 +97,6 @@
     }
     
     QQBrightnessViewShared.isStartPlay = NO;
-    
-//    [self.player pause];
-//    [self.player stop];
-//    [self.player shutdown];
 }
 
 - (void)dealloc {
@@ -119,6 +115,7 @@
     [self.view addSubview:self.nextPageBtn];
     [self.view addSubview:self.topView];
     [self.view addSubview:self.playerFatherView];
+    
     
 //    [self.view addSubview:self.tableView];
     [self makePlayViewConstraints];
@@ -180,11 +177,14 @@
 }
 #pragma mark - 屏幕旋转
 - (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
+    
     if (toInterfaceOrientation == UIInterfaceOrientationPortrait) {
+    
         [self.playerFatherView mas_updateConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.view).offset(20);
         }];
-    }else if (toInterfaceOrientation == UIInterfaceOrientationLandscapeRight || toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft) {
+        
+    } else if (toInterfaceOrientation == UIInterfaceOrientationLandscapeRight || toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft) {
         
         [self.playerFatherView mas_updateConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.view).offset(0);
@@ -209,15 +209,18 @@
 
 #pragma mark - getter
 - (UIView *)topView {
+    
     if (!_topView) {
+        
         _topView = [[UIView alloc] init];
-        _topView.backgroundColor = [UIColor blackColor];
     }
     return _topView;
 }
 
 - (UIView *)playerFatherView {
+    
     if (!_playerFatherView) {
+        
         _playerFatherView = [[UIView alloc] init];
     }
     return _playerFatherView;
