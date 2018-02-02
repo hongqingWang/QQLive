@@ -150,10 +150,16 @@
 - (void)makePlayViewConstraints {
     
     [self.playerFatherView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(20);
-        make.leading.trailing.mas_equalTo(0);
-        // 这里宽高比16：9,可自定义宽高比
-        make.height.mas_equalTo(self.playerFatherView.mas_width).multipliedBy(9.0f/16.0f);
+        
+        make.top.equalTo(self.view).offset(20);
+        make.left.equalTo(self.view);
+        make.right.equalTo(self.view);
+        make.height.mas_equalTo(100);
+        
+//        make.top.mas_equalTo(20);
+//        make.leading.trailing.mas_equalTo(0);
+//        // 这里宽高比16：9,可自定义宽高比
+//        make.height.mas_equalTo(self.playerFatherView.mas_width).multipliedBy(9.0f/16.0f);
     }];
     
     [self.topView mas_updateConstraints:^(MASConstraintMaker *make) {
@@ -213,6 +219,7 @@
     if (!_topView) {
         
         _topView = [[UIView alloc] init];
+//        _topView.backgroundColor = [UIColor redColor];
     }
     return _topView;
 }
@@ -222,6 +229,7 @@
     if (!_playerFatherView) {
         
         _playerFatherView = [[UIView alloc] init];
+        _playerFatherView.backgroundColor = [UIColor redColor];
     }
     return _playerFatherView;
 }
